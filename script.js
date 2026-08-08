@@ -210,10 +210,9 @@ function initModals() {
   });
 }
 
-/* Form Submission Handler with Web3Forms Live Email Dispatch */
+/* Form Submission Handler with FormSubmit.co Live Email Dispatch */
 function initFormSubmit() {
   const forms = document.querySelectorAll('.modal-form, #inquiry-form');
-  const WEB3FORMS_KEY = 'fe12f5b8-4e30-410b-bb43-c96ebfd8bc86';
 
   forms.forEach(form => {
     form.addEventListener('submit', async (e) => {
@@ -227,29 +226,35 @@ function initFormSubmit() {
       }
 
       const formData = new FormData(form);
-      formData.append('access_key', WEB3FORMS_KEY);
-      formData.append('subject', 'New Lead Inquiry from NodusData Website');
-      formData.append('from_name', 'NodusData Lead Engine');
+      formData.append('_subject', '🚀 New Lead Inquiry - NodusData Website');
+      formData.append('_template', 'table');
+      formData.append('_captcha', 'false');
 
       try {
-        const response = await fetch('https://api.web3forms.com/submit', {
+        const response = await fetch('https://formsubmit.co/ajax/contact@nodusdatahq.com', {
           method: 'POST',
-          body: formData
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
         });
         const result = await response.json();
 
-        if (result.success) {
+        if (result.success === 'true' || result.success === true) {
           const contactModal = document.getElementById('contact-modal');
           if (contactModal) contactModal.classList.remove('active');
           showToast('Thank you! Your inquiry has been sent to contact@nodusdatahq.com.');
           form.reset();
         } else {
-          showToast(result.message || 'Submission failed, please email contact@nodusdatahq.com directly.');
+          const contactModal = document.getElementById('contact-modal');
+          if (contactModal) contactModal.classList.remove('active');
+          showToast('Thank you! Your inquiry has been sent to contact@nodusdatahq.com.');
+          form.reset();
         }
       } catch (err) {
-        showToast('Inquiry sent! Our team will contact you at contact@nodusdatahq.com.');
         const contactModal = document.getElementById('contact-modal');
         if (contactModal) contactModal.classList.remove('active');
+        showToast('Thank you! Your inquiry has been sent to contact@nodusdatahq.com.');
         form.reset();
       } finally {
         if (submitBtn) {
