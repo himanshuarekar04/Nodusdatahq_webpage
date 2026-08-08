@@ -1,0 +1,1994 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopee PDP Data API & Extraction Service | NodusData</title>
+  <meta name="description" content="NodusData provides high-speed Shopee PDP REST API keys & direct data feeds. Extract complete get_pc raw JSON, live prices, stock, & variation data across 12 global Shopee markets.">
+  <meta name="keywords" content="Shopee product API, Shopee product data, Shopee pricing API, Shopee inventory API, Shopee marketplace data, Bright Data alternative Shopee, Oxylabs Shopee API alternative, Apify Shopee actor alternative, ScraperAPI Shopee competitor, DataWeave Shopee alternative, top 5 e-commerce scrapers, best Shopee scraper API, Shopee PDP get_pc API, Shopee raw JSON payload, Shopee Python API SDK, Shopee price monitoring tool, Shopee MAP compliance tracker, Shopee anti-bot proxy bypass, managed Shopee web scraping service, NodusData">
+  <meta name="robots" content="index, follow, noarchive">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://nodusdatahq.com/">
+
+  <!-- OpenGraph Meta Tags for B2B Sharing -->
+  <meta property="og:title" content="Shopee PDP Data API & Extraction Service | NodusData">
+  <meta property="og:description" content="Access complete, untruncated Shopee PDP raw JSON response payloads via high-speed REST APIs or automated cloud feeds across 12 global markets.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nodusdatahq.com/">
+  <meta property="og:site_name" content="NodusData Enterprise">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shopee PDP Data API & Extraction Service | NodusData">
+  <meta name="twitter:description" content="High-speed REST APIs and direct data feeds for Shopee PDP raw JSON responses, live prices, stock, & variation data across 12 global markets.">
+
+  <!-- Comprehensive JSON-LD Structured Data Suite -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "NodusData",
+      "url": "https://nodusdatahq.com/",
+      "description": "Enterprise Shopee PDP product data extraction service & REST API platform."
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "NodusData Enterprise",
+      "url": "https://nodusdatahq.com/",
+      "logo": "https://nodusdatahq.com/favicon.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "contact@nodusdatahq.com",
+        "contactType": "customer service",
+        "availableLanguage": ["English"]
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Shopee PDP Product Data Extraction API & Data Feeds",
+      "provider": {
+        "@type": "Organization",
+        "name": "NodusData Enterprise"
+      },
+      "serviceType": "E-Commerce Market Intelligence & Data Extraction API",
+      "areaServed": ["Brazil", "Mexico", "Argentina", "Singapore", "Malaysia", "Thailand", "Philippines", "Vietnam", "Indonesia", "Cambodia", "Laos", "Taiwan"],
+      "keywords": [
+        "Shopee product API", "Shopee product data", "Shopee pricing API", "Shopee inventory API", "Shopee marketplace data",
+        "Bright Data alternative Shopee", "Oxylabs Shopee API alternative", "Apify Shopee actor alternative", "ScraperAPI competitor", "top 5 e-commerce scrapers",
+        "Shopee price monitoring tool", "Shopee MAP compliance tracker", "Shopee brand monitoring scraper",
+        "Shopee PDP get_pc API", "Shopee raw JSON payload", "Shopee Python API SDK", "Shopee anti-bot proxy bypass"
+      ],
+      "description": "High-throughput dedicated REST API key provisioning and direct data feed delivery for Shopee product detail pages (PDP)."
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "NodusData Shopee API Platform",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "All",
+      "keywords": "Shopee product API, Shopee pricing API, Shopee inventory API, Bright Data alternative, Oxylabs alternative, Apify alternative, top 5 scrapers, Shopee Python SDK, Shopee get_pc JSON",
+      "offers": {
+        "@type": "Offer",
+        "price": "5.00",
+        "priceCurrency": "USD",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "5.00",
+          "priceCurrency": "USD",
+          "unitText": "1,000 successful requests"
+        },
+        "availability": "https://schema.org/InStock"
+      },
+      "description": "Dedicated Shopee product data extraction API providing single-market REST keys and automated feeds at a fixed rate of $5 per 1,000 successful requests per selected market."
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I get API keys for real-time Shopee PDP product data?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can request API access directly through our inquiry form or contact team. We provision production and sandbox API credentials instantly with full REST API documentation and code samples."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I receive direct automated data feeds without writing code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! We deliver automated, scheduled raw datasets (in JSON, CSV, or Parquet format) directly to your AWS S3 bucket, Google Cloud Storage, or automated webhook endpoints for zero-code integration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What data fields are included in the Full PDP get_pc Raw JSON payload?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our payloads include 100% complete, untruncated Shopee response attributes: item_id, shop_id, models variation arrays, tier_variations with option images, product_price single values & discounts, product_shipping SLA, seller metadata, and active vouchers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which international Shopee markets are covered?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We cover all 12 global active Shopee markets: Brazil (BR), Mexico (MX), Argentina (AR), Singapore (SG), Malaysia (MY), Thailand (TH), Philippines (PH), Vietnam (VN), Indonesia (ID), Cambodia (KH), Laos (LA), and Taiwan (TW)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the $5 / 1k requests pricing cover all countries in a single multi-market API?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We provide dedicated APIs for a single Shopee market based on client requirements. Choose your region — we will provide a dedicated API for that market. Pricing of $5 per 1,000 requests applies per individual market API."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the data accuracy guarantee and uptime SLA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We guarantee 99.8%+ field-level data accuracy through continuous validation pipelines, backed by a 99.5% uptime SLA and 24/7 automated monitoring."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why choose NodusData over general web scraping APIs like Bright Data or Oxylabs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "General scraping APIs charge high monthly retainers ($300–$500+/mo), bill for failed attempts, and return generic HTML. NodusData is 100% specialized in Shopee PDP data, offering a fixed rate of $5 per 1k successful requests with complete get_pc raw JSON payloads."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does NodusData handle Shopee anti-bot protections and IP blocks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "NodusData operates a fully managed infrastructure with automated residential proxy rotation, CAPTCHA solving, and dynamic JS rendering, delivering clean HTTP 200 OK JSON responses via REST API endpoints."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://nodusdatahq.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "API & Data Feeds",
+          "item": "https://nodusdatahq.com/#delivery-modes"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Pricing & SLA",
+          "item": "https://nodusdatahq.com/#sla-pricing"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Why NodusData",
+          "item": "https://nodusdatahq.com/#comparison"
+        }
+      ]
+    }
+  ]
+  </script>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Data Sample & Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <script src="data-sample.js"></script>
+</head>
+<body>
+  <!-- Background Glow & Grid Overlay -->
+  <div class="bg-grid"></div>
+  <div class="bg-radial-glow"></div>
+  <div class="bg-radial-glow-2"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header">
+    <!-- Top Announcement Bar: Dedicated Market API Announcement -->
+    <div class="top-announcement-bar">
+      <div class="announcement-container">
+        <span class="announcement-badge"><i class="fa-solid fa-earth-americas"></i> DEDICATED MARKET APIs</span>
+        <span class="announcement-text"><strong>Choose your region — we will provide a dedicated API for that market</strong> at a fixed rate of $5 / 1k requests!</span>
+        <a href="#contact" class="announcement-link">Get API Access & Data <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <div class="header-container">
+      <a href="#" class="logo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-circle-nodes"></i>
+        </div>
+        <span class="logo-text">Nodus<span class="logo-accent">Data</span></span>
+      </a>
+
+      <nav class="main-nav" id="main-nav">
+        <a href="#delivery-modes" class="nav-link">API & Data Feeds</a>
+        <a href="#sla-pricing" class="nav-link">Pricing & SLA</a>
+        <a href="#comparison" class="nav-link">Why NodusData</a>
+        <a href="#markets" class="nav-link">Markets</a>
+        <a href="#offerings" class="nav-link">Data Coverage</a>
+        <a href="#sample-dataset" class="nav-link">Sample Dataset</a>
+        <a href="#use-cases" class="nav-link">Use Cases</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#about" class="nav-link">About</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-primary btn-nav-contact" id="btn-open-modal">Contact us</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-container">
+        <div class="hero-grid">
+          <!-- Left Column: Copy & Actions -->
+          <div class="hero-left">
+            <div class="hero-badge-pill">
+              <i class="fa-solid fa-key badge-shield-icon"></i>
+              <span class="badge-text-main">Dedicated Market APIs ($5 / 1k)</span>
+              <span class="badge-dot-sep">•</span>
+              <span class="badge-text-sub">Choose Your Region</span>
+            </div>
+
+            <h1 class="hero-title">
+              Real-time Shopee product data across all <span class="highlight-num">12</span> global markets
+            </h1>
+
+            <p class="hero-subheadline">
+              <strong>Choose your region — we will provide a dedicated API for that market.</strong> Access high-speed <strong>Shopee product API</strong> endpoints and automated direct <strong>Shopee product data</strong> feeds for live <strong>Shopee marketplace data</strong> across Brazil, Mexico, Argentina, Singapore, Malaysia, Thailand, Philippines, Vietnam, Indonesia, Cambodia, Laos, and Taiwan.
+            </p>
+
+            <div class="hero-cta-group">
+              <button class="btn btn-primary btn-hero-primary" id="btn-open-modal-hero">
+                <span>Get API Key / Contact us</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+              <a href="#sample-dataset" class="btn btn-secondary btn-hero-secondary" id="btn-hero-sample">
+                <i class="fa-solid fa-file-lines"></i>
+                <span>View sample dataset</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive 3D Globe with Market Pins -->
+          <div class="hero-right">
+            <div class="globe-viewport">
+              <div class="globe-glow-backdrop"></div>
+              <img src="assets/hero_globe.png" alt="Shopee Global Data Network 3D Earth Globe" class="globe-graphic-img">
+              
+              <!-- SVG Connecting Arcs -->
+              <svg class="globe-lines-svg" viewBox="0 0 600 600" preserveAspectRatio="none">
+                <!-- Singapore Arc -->
+                <path d="M220 280 Q 260 250, 310 270" class="globe-arc-line" />
+                <circle cx="310" cy="270" r="4" class="node-dot pulse-1" />
+                
+                <!-- Malaysia Arc -->
+                <path d="M230 350 Q 270 330, 320 310" class="globe-arc-line" />
+                <circle cx="320" cy="310" r="4" class="node-dot pulse-2" />
+
+                <!-- Mexico Arc -->
+                <path d="M180 160 Q 240 180, 280 220" class="globe-arc-line" />
+                <circle cx="280" cy="220" r="4" class="node-dot pulse-3" />
+
+                <!-- Argentina Arc -->
+                <path d="M200 460 Q 260 420, 300 370" class="globe-arc-line" />
+                <circle cx="300" cy="370" r="4" class="node-dot pulse-4" />
+                
+                <!-- Taiwan Arc -->
+                <path d="M470 120 Q 420 150, 390 190" class="globe-arc-line" />
+                <circle cx="390" cy="190" r="4" class="node-dot pulse-5" />
+                
+                <!-- Thailand Arc -->
+                <path d="M480 180 Q 430 200, 350 230" class="globe-arc-line" />
+                <circle cx="350" cy="230" r="4" class="node-dot pulse-6" />
+
+                <!-- Cambodia Arc -->
+                <path d="M485 220 Q 430 230, 360 240" class="globe-arc-line" />
+                <circle cx="360" cy="240" r="4" class="node-dot pulse-7" />
+
+                <!-- Vietnam Arc -->
+                <path d="M490 270 Q 430 250, 370 255" class="globe-arc-line" />
+                <circle cx="370" cy="255" r="4" class="node-dot pulse-8" />
+
+                <!-- Laos Arc -->
+                <path d="M485 320 Q 430 290, 365 265" class="globe-arc-line" />
+                <circle cx="365" cy="265" r="4" class="node-dot pulse-9" />
+
+                <!-- Philippines Arc -->
+                <path d="M490 380 Q 450 330, 410 290" class="globe-arc-line" />
+                <circle cx="410" cy="290" r="4" class="node-dot pulse-10" />
+
+                <!-- Indonesia Arc -->
+                <path d="M480 430 Q 410 390, 360 340" class="globe-arc-line" />
+                <circle cx="360" cy="340" r="4" class="node-dot pulse-11" />
+
+                <!-- Brazil Arc -->
+                <path d="M380 490 Q 300 450, 240 390" class="globe-arc-line" />
+                <circle cx="240" cy="390" r="4" class="node-dot pulse-12" />
+              </svg>
+
+              <!-- Floating Market Country Cards (All 12 Global Markets) -->
+              <div class="market-pin-card pin-singapore">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/sg.svg" alt="Singapore Flag" class="pin-flag">
+                <span>Singapore</span>
+              </div>
+
+              <div class="market-pin-card pin-malaysia">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/my.svg" alt="Malaysia Flag" class="pin-flag">
+                <span>Malaysia</span>
+              </div>
+
+              <div class="market-pin-card pin-mexico">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/mx.svg" alt="Mexico Flag" class="pin-flag">
+                <span>Mexico</span>
+              </div>
+
+              <div class="market-pin-card pin-argentina">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ar.svg" alt="Argentina Flag" class="pin-flag">
+                <span>Argentina</span>
+              </div>
+
+              <div class="market-pin-card pin-taiwan">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/tw.svg" alt="Taiwan Flag" class="pin-flag">
+                <span>Taiwan</span>
+              </div>
+
+              <div class="market-pin-card pin-thailand">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/th.svg" alt="Thailand Flag" class="pin-flag">
+                <span>Thailand</span>
+              </div>
+
+              <div class="market-pin-card pin-cambodia">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/kh.svg" alt="Cambodia Flag" class="pin-flag">
+                <span>Cambodia</span>
+              </div>
+
+              <div class="market-pin-card pin-vietnam">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/vn.svg" alt="Vietnam Flag" class="pin-flag">
+                <span>Vietnam</span>
+              </div>
+
+              <div class="market-pin-card pin-laos">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/la.svg" alt="Laos Flag" class="pin-flag">
+                <span>Laos</span>
+              </div>
+
+              <div class="market-pin-card pin-philippines">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ph.svg" alt="Philippines Flag" class="pin-flag">
+                <span>Philippines</span>
+              </div>
+
+              <div class="market-pin-card pin-indonesia">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/id.svg" alt="Indonesia Flag" class="pin-flag">
+                <span>Indonesia</span>
+              </div>
+
+              <div class="market-pin-card pin-brazil">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/br.svg" alt="Brazil Flag" class="pin-flag">
+                <span>Brazil</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metrics Bar Section directly matching reference design -->
+        <div class="hero-metrics-bar glass-card">
+          <div class="metric-item">
+            <div class="metric-icon-wrapper">
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <div class="metric-text-group">
+              <div class="metric-number">99.8%+</div>
+              <div class="metric-subtitle">Data accuracy</div>
+              <div class="metric-description">Consistent, field-level accuracy you can trust</div>
+            </div>
+          </div>
+
+          <div class="metric-item">
+            <div class="metric-icon-wrapper">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <div class="metric-text-group">
+              <div class="metric-number">12 markets</div>
+              <div class="metric-subtitle">Active Shopee coverage</div>
+              <div class="metric-description">One reliable data source across all key regions</div>
+            </div>
+          </div>
+
+          <div class="metric-item">
+            <div class="metric-icon-wrapper">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <div class="metric-text-group">
+              <div class="metric-number">Real-time</div>
+              <div class="metric-subtitle">Data freshness</div>
+              <div class="metric-description">Continuously updated for the most accurate insights</div>
+            </div>
+          </div>
+
+          <div class="metric-item">
+            <div class="metric-icon-wrapper">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div class="metric-text-group">
+              <div class="metric-number">Enterprise</div>
+              <div class="metric-subtitle">Delivery support</div>
+              <div class="metric-description">Built for scale with dedicated enterprise support</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dual Delivery Modes Section: REST APIs & Direct Data Feeds -->
+    <section class="section delivery-modes-section" id="delivery-modes">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <div class="section-tag-dot"><span class="orange-dot">•</span> FLEXIBLE DATA DELIVERY FOR B2B & B2C</div>
+          <h2 class="section-title">API Keys & Direct Data Feeds</h2>
+          <p class="section-subtitle">
+            Whether you are a developer looking for instant API endpoints or an enterprise team requiring automated direct data exports, we deliver 99.8%+ accurate Shopee data tailored to your exact workflow.
+          </p>
+        </div>
+
+        <div class="delivery-modes-grid">
+          <!-- Delivery Mode 1: REST API -->
+          <div class="delivery-mode-card glass-card">
+            <div class="mode-badge-pill">
+              <i class="fa-solid fa-code"></i> FOR DEVELOPERS & B2B INTEGRATION
+            </div>
+            <div class="mode-header-box">
+              <div class="mode-icon-circle">
+                <i class="fa-solid fa-key"></i>
+              </div>
+              <div class="mode-title-group">
+                <h3>Real-Time REST API Access</h3>
+                <span class="mode-sub">Instant API Keys • Live Payload Delivery</span>
+              </div>
+            </div>
+            <p class="mode-description">
+              Get dedicated API keys for high-speed, live REST API integration. <strong>Choose your region — we will provide a dedicated API for that market.</strong> Query real-time product prices, stock variations, seller details, and complete <code>get_pc</code> raw JSON payloads programmatically for your selected country.
+            </p>
+            <ul class="mode-feature-list">
+              <li><i class="fa-solid fa-circle-check text-accent"></i> <strong>Shopee Pricing API</strong> — Live product prices, discounts, and flash sale shifts</li>
+              <li><i class="fa-solid fa-circle-check text-accent"></i> <strong>Shopee Inventory API</strong> — Real-time stock levels, model variations, and stockouts</li>
+              <li><i class="fa-solid fa-circle-check text-accent"></i> <strong>Dedicated Market Endpoints</strong> — Single-market API provisioning per client selection</li>
+              <li><i class="fa-solid fa-circle-check text-accent"></i> <strong>Full Raw JSON Payloads</strong> — Native Shopee <code>get_pc</code> response objects</li>
+            </ul>
+            <div class="mode-action">
+              <a href="#contact" class="btn btn-primary btn-block">
+                <i class="fa-solid fa-key"></i> Request API Keys
+              </a>
+            </div>
+          </div>
+
+          <!-- Delivery Mode 2: Direct Data Feeds -->
+          <div class="delivery-mode-card glass-card cyan-border-card">
+            <div class="mode-badge-pill cyan-pill">
+              <i class="fa-solid fa-database"></i> FOR ANALYTICS & ENTERPRISE FEEDS
+            </div>
+            <div class="mode-header-box">
+              <div class="mode-icon-circle cyan-icon">
+                <i class="fa-solid fa-cloud-arrow-down"></i>
+              </div>
+              <div class="mode-title-group">
+                <h3>Automated Direct Data Feeds</h3>
+                <span class="mode-sub">Zero-Code Feeds • S3 / GCS / Custom Webhooks</span>
+              </div>
+            </div>
+            <p class="mode-description">
+              No developer resources to write code? No problem! We deliver complete, structured raw datasets (JSON, CSV, Parquet) directly to your cloud storage, database, or automated email feed.
+            </p>
+            <ul class="mode-feature-list">
+              <li><i class="fa-solid fa-circle-check text-cyan"></i> <strong>Automated S3 & Cloud Sync</strong> — Daily/hourly dataset delivery straight to your bucket</li>
+              <li><i class="fa-solid fa-circle-check text-cyan"></i> <strong>Complete Data Exports</strong> — Full <code>sample.json</code> scale datasets across all 12 markets</li>
+              <li><i class="fa-solid fa-circle-check text-cyan"></i> <strong>Zero Code Integration</strong> — Plug directly into PowerBI, Tableau, Excel, or SQL databases</li>
+              <li><i class="fa-solid fa-circle-check text-cyan"></i> <strong>Custom Market Feeds</strong> — Tailored bulk feeds filtered by category or seller</li>
+            </ul>
+            <div class="mode-action">
+              <a href="#contact" class="btn btn-secondary btn-block">
+                <i class="fa-solid fa-database"></i> Request Direct Data Feed
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing & Service Level Agreement (SLA) Section -->
+    <section class="section sla-pricing-section" id="sla-pricing">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <div class="section-tag-dot"><span class="orange-dot">•</span> TRANSPARENT PRICING & GUARANTEED SLA</div>
+          <h2 class="section-title">Transparent Pricing & Guaranteed SLA</h2>
+          <p class="section-subtitle">
+            NodusData is committed to transparent, predictable pricing with zero volume markups and enterprise-backed Service Level Agreements.
+          </p>
+        </div>
+
+        <div class="sla-pricing-grid">
+          <!-- Left Box: Pricing Banner -->
+          <div class="pricing-card glass-card text-center">
+            <div class="pricing-badge-pill"><i class="fa-solid fa-tag"></i> TRANSPARENT PRICING</div>
+            <div class="pricing-header">
+              <span class="price-currency">$</span>
+              <span class="price-amount">5</span>
+              <span class="price-unit">/ 1,000 requests</span>
+            </div>
+            <h3 class="pricing-title">Fix Rate Per 1k Successful Requests</h3>
+            <p class="pricing-subtitle">Choose your region — we will provide a dedicated API for that market at a fixed rate of $5 per 1,000 requests.</p>
+
+            <ul class="pricing-feature-list">
+              <li><i class="fa-solid fa-circle-check text-accent"></i> <strong>Dedicated Single-Market API</strong> — Select your market; we provision a dedicated API key & endpoint for that country</li>
+              <li><i class="fa-solid fa-circle-check text-accent"></i> <strong>Zero Volume Markups</strong> — Same $5/1k fix rate at any volume</li>
+              <li><i class="fa-solid fa-circle-check text-accent"></i> <strong>Pay Only For Success</strong> — $0 charge for failed or error requests</li>
+              <li><i class="fa-solid fa-circle-check text-accent"></i> <strong>Full PDP <code>get_pc</code> Raw JSON</strong> — 100% untruncated payloads</li>
+              <li><i class="fa-solid fa-circle-check text-accent"></i> <strong>12 Markets Available</strong> — Choose BR, MX, AR, SG, MY, TH, PH, VN, ID, KH, LA, or TW</li>
+            </ul>
+
+            <div class="pricing-cta-box">
+              <a href="#contact" class="btn btn-lg btn-primary btn-glow btn-block">
+                <i class="fa-solid fa-key"></i> Request API Keys ($5 / 1k)
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Box: Service Level Agreement (SLA) Matrix -->
+          <div class="sla-matrix-card glass-card">
+            <div class="sla-header">
+              <div class="sla-icon-box"><i class="fa-solid fa-shield-halved"></i></div>
+              <div>
+                <h3>Service Level Agreement (SLA)</h3>
+                <p>NodusData is committed to providing the following guaranteed service levels:</p>
+              </div>
+            </div>
+
+            <div class="sla-metrics-list">
+              <!-- Metric 1 -->
+              <div class="sla-item">
+                <div class="sla-item-icon"><i class="fa-solid fa-circle-check text-accent"></i></div>
+                <div class="sla-item-content">
+                  <div class="sla-val">99% Minimum Success Rate</div>
+                  <p class="sla-desc">Guaranteed payload parsing & field-level accuracy across all successful extraction requests.</p>
+                </div>
+              </div>
+
+              <!-- Metric 2 -->
+              <div class="sla-item">
+                <div class="sla-item-icon"><i class="fa-solid fa-server text-cyan"></i></div>
+                <div class="sla-item-content">
+                  <div class="sla-val">99.5% Service Availability</div>
+                  <p class="sla-desc">Service availability with 24/7 automated monitoring and continuous infrastructure failovers.</p>
+                </div>
+              </div>
+
+              <!-- Metric 3 -->
+              <div class="sla-item">
+                <div class="sla-item-icon"><i class="fa-solid fa-bolt text-accent"></i></div>
+                <div class="sla-item-content">
+                  <div class="sla-val">General Support: Within 1 Business Hour</div>
+                  <p class="sla-desc">Fast response for developer support, API key provisioning, documentation, and technical questions.</p>
+                </div>
+              </div>
+
+              <!-- Metric 4 -->
+              <div class="sla-item">
+                <div class="sla-item-icon"><i class="fa-solid fa-shield-cat text-cyan"></i></div>
+                <div class="sla-item-content">
+                  <div class="sla-val">Critical Incident Response: Within 4 Hours</div>
+                  <p class="sla-desc">Rapid resolution commitment for major service degradation or marketplace gateway changes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Competitor Comparison Section -->
+    <section class="section comparison-section" id="comparison">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <div class="section-tag-dot"><span class="orange-dot">•</span> MARKET POSITIONING & ADVANTAGE</div>
+          <h2 class="section-title">How NodusData Compares</h2>
+          <p class="section-subtitle">
+            See how NodusData stacks up against general web scraping APIs and custom in-house scraper development.
+          </p>
+        </div>
+
+        <div class="comparison-table-wrapper glass-card">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th class="col-feature">Feature & Capability</th>
+                <th class="col-nodus highlight-header">
+                  <div class="nodus-badge"><i class="fa-solid fa-star"></i> OUR SOLUTION</div>
+                  <span class="brand-title">NodusData API</span>
+                </th>
+                <th class="col-competitor">General Scraping APIs<br><small>(Bright Data / Oxylabs / Apify / ScraperAPI)</small></th>
+                <th class="col-inhouse">Custom In-House Scrapers<br><small>(Python / Puppeteer)</small></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="feature-name">
+                  <i class="fa-solid fa-code text-accent"></i> <strong>Shopee Data Specialty</strong>
+                </td>
+                <td class="nodus-col highlight-cell">
+                  <span class="status-check winner"><i class="fa-solid fa-circle-check"></i> 100% Shopee Specialized</span>
+                  <span class="cell-sub">Full <code>get_pc</code> Raw JSON responses</span>
+                </td>
+                <td class="competitor-col">
+                  <span class="status-cross"><i class="fa-solid fa-circle-minus"></i> Generic Parsers</span>
+                  <span class="cell-sub">Basic HTML scraping without variation depth</span>
+                </td>
+                <td class="inhouse-col">
+                  <span class="status-cross"><i class="fa-solid fa-circle-xmark"></i> High Maintenance</span>
+                  <span class="cell-sub">Breaks on layout & anti-bot changes</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="feature-name">
+                  <i class="fa-solid fa-tag text-accent"></i> <strong>Pricing Structure</strong>
+                </td>
+                <td class="nodus-col highlight-cell">
+                  <span class="status-check winner"><i class="fa-solid fa-circle-check"></i> Fixed $5 / 1k Requests</span>
+                  <span class="cell-sub">No monthly minimums or volume markups</span>
+                </td>
+                <td class="competitor-col">
+                  <span class="status-cross"><i class="fa-solid fa-circle-xmark"></i> High Retainers</span>
+                  <span class="cell-sub">$300–$500+/mo commitments + GB pricing</span>
+                </td>
+                <td class="inhouse-col">
+                  <span class="status-cross"><i class="fa-solid fa-circle-xmark"></i> Unpredictable Costs</span>
+                  <span class="cell-sub">High developer salaries & proxy bills</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="feature-name">
+                  <i class="fa-solid fa-shield-halved text-accent"></i> <strong>Failed Request Charges</strong>
+                </td>
+                <td class="nodus-col highlight-cell">
+                  <span class="status-check winner"><i class="fa-solid fa-circle-check"></i> $0 Charge</span>
+                  <span class="cell-sub">Pay ONLY for 200 OK successful responses</span>
+                </td>
+                <td class="competitor-col">
+                  <span class="status-cross"><i class="fa-solid fa-circle-xmark"></i> Billed Per Attempt</span>
+                  <span class="cell-sub">Pay for failed or blocked attempts</span>
+                </td>
+                <td class="inhouse-col">
+                  <span class="status-cross"><i class="fa-solid fa-circle-xmark"></i> Wasted Bandwidth</span>
+                  <span class="cell-sub">Proxy costs consumed even when blocked</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="feature-name">
+                  <i class="fa-solid fa-clock text-accent"></i> <strong>Guaranteed Response SLA</strong>
+                </td>
+                <td class="nodus-col highlight-cell">
+                  <span class="status-check winner"><i class="fa-solid fa-circle-check"></i> &lt;1h Support Response</span>
+                  <span class="cell-sub">&lt;4h Critical Incident SLA backed</span>
+                </td>
+                <td class="competitor-col">
+                  <span class="status-cross"><i class="fa-solid fa-circle-minus"></i> 24–48 Hours</span>
+                  <span class="cell-sub">Slow support for specialized Shopee issues</span>
+                </td>
+                <td class="inhouse-col">
+                  <span class="status-cross"><i class="fa-solid fa-circle-xmark"></i> Internal Overhead</span>
+                  <span class="cell-sub">Engineering team distracted by scraper fixes</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="feature-name">
+                  <i class="fa-solid fa-globe text-accent"></i> <strong>Multi-Market Coverage</strong>
+                </td>
+                <td class="nodus-col highlight-cell">
+                  <span class="status-check winner"><i class="fa-solid fa-circle-check"></i> All 12 Shopee Domains</span>
+                  <span class="cell-sub">BR, MX, AR, SG, MY, TH, PH, VN, ID, KH, LA, TW out of the box</span>
+                </td>
+                <td class="competitor-col">
+                  <span class="status-cross"><i class="fa-solid fa-circle-minus"></i> Partial Regional Coverage</span>
+                  <span class="cell-sub">Requires buying additional proxy pools</span>
+                </td>
+                <td class="inhouse-col">
+                  <span class="status-cross"><i class="fa-solid fa-circle-xmark"></i> Complex Geo-Rotators</span>
+                  <span class="cell-sub">Must configure localized residential IPs</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accuracy Section -->
+    <section class="section accuracy-section" id="accuracy">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <div class="section-tag">DATA INTEGRITY & INFRASTRUCTURE</div>
+          <h2 class="section-title">Built for Enterprise Scale and Accuracy</h2>
+        </div>
+
+        <div class="metrics-grid">
+          <div class="metric-card glass-card">
+            <div class="metric-icon">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <div class="metric-value">99.8%+</div>
+            <div class="metric-label">Data Accuracy</div>
+            <p class="metric-desc">Continuous validation pipelines ensure consistent, reliable data across attributes.</p>
+          </div>
+
+          <div class="metric-card glass-card">
+            <div class="metric-icon">
+              <i class="fa-solid fa-arrows-rotate"></i>
+            </div>
+            <div class="metric-value">Real-time</div>
+            <div class="metric-label">Data Collection</div>
+            <p class="metric-desc">Instantaneous price updates, stock changes, and flash sale shifts captured live.</p>
+          </div>
+
+          <div class="metric-card glass-card">
+            <div class="metric-icon">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <div class="metric-value">Multi-market</div>
+            <div class="metric-label">Coverage</div>
+            <p class="metric-desc">Seamless cross-border monitoring spanning Southeast Asia & Latin America.</p>
+          </div>
+
+          <div class="metric-card glass-card">
+            <div class="metric-icon">
+              <i class="fa-solid fa-server"></i>
+            </div>
+            <div class="metric-value">Enterprise</div>
+            <div class="metric-label">Reliability</div>
+            <p class="metric-desc">High uptime architecture engineered to process high-throughput data volumes.</p>
+          </div>
+        </div>
+
+        <div class="accuracy-narrative glass-card">
+          <div class="narrative-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <p class="narrative-text">
+            Our data infrastructure is optimized for large-scale product intelligence, delivering highly accurate and consistently structured Shopee product data across multiple international markets.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Markets Covered Section -->
+    <section class="section markets-section" id="markets">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <div class="section-tag">GLOBAL FOOTPRINT</div>
+          <h2 class="section-title">Markets covered</h2>
+          <p class="section-subtitle">Choose your region — we will provide a dedicated API engineered specifically for that market at $5 / 1k requests.</p>
+        </div>
+
+        <div class="markets-grid">
+          <!-- Brazil -->
+          <a href="shopee-brazil-api.html" class="market-card glass-card">
+            <div class="flag-wrapper">
+              <svg class="flag-svg" viewBox="0 0 640 480">
+                <rect width="640" height="480" fill="#009b3a"/>
+                <polygon points="320,40 600,240 320,440 40,240" fill="#fedf00"/>
+                <circle cx="320" cy="240" r="140" fill="#002776"/>
+                <path d="M 180,240 A 140,140 0 0 0 460,240" fill="none" stroke="#ffffff" stroke-width="18"/>
+              </svg>
+            </div>
+            <div class="market-info">
+              <h3 class="market-name">Brazil <i class="fa-solid fa-arrow-up-right-from-square market-link-icon"></i></h3>
+              <span class="market-domain">shopee.com.br</span>
+              <span class="market-badge">Latin America</span>
+            </div>
+          </a>
+
+          <!-- Singapore -->
+          <a href="shopee-singapore-api.html" class="market-card glass-card">
+            <div class="flag-wrapper">
+              <svg class="flag-svg" viewBox="0 0 640 480">
+                <rect width="640" height="240" fill="#ef3340"/>
+                <rect y="240" width="640" height="240" fill="#ffffff"/>
+                <path d="M120,60 A70,70 0 0,0 120,180 A80,80 0 0,1 120,60" fill="#ffffff"/>
+                <polygon points="150,90 154,102 166,102 156,110 160,122 150,114 140,122 144,110 134,102 146,102" fill="#ffffff"/>
+                <polygon points="180,105 184,117 196,117 186,125 190,137 180,129 170,137 174,125 164,117 176,117" fill="#ffffff"/>
+                <polygon points="150,135 154,147 166,147 156,155 160,167 150,159 140,167 144,155 134,147 146,147" fill="#ffffff"/>
+              </svg>
+            </div>
+            <div class="market-info">
+              <h3 class="market-name">Singapore <i class="fa-solid fa-arrow-up-right-from-square market-link-icon"></i></h3>
+              <span class="market-domain">shopee.sg</span>
+              <span class="market-badge">Southeast Asia</span>
+            </div>
+          </a>
+
+          <!-- Malaysia -->
+          <a href="shopee-malaysia-api.html" class="market-card glass-card">
+            <div class="flag-wrapper">
+              <svg class="flag-svg" viewBox="0 0 640 480">
+                <rect width="640" height="480" fill="#cc0000"/>
+                <rect y="34" width="640" height="34" fill="#ffffff"/>
+                <rect y="102" width="640" height="34" fill="#ffffff"/>
+                <rect y="170" width="640" height="34" fill="#ffffff"/>
+                <rect y="238" width="640" height="34" fill="#ffffff"/>
+                <rect y="306" width="640" height="34" fill="#ffffff"/>
+                <rect y="374" width="640" height="34" fill="#ffffff"/>
+                <rect y="442" width="640" height="38" fill="#ffffff"/>
+                <rect width="320" height="272" fill="#000066"/>
+                <circle cx="160" cy="136" r="80" fill="#ffcc00"/>
+                <circle cx="180" cy="136" r="70" fill="#000066"/>
+              </svg>
+            </div>
+            <div class="market-info">
+              <h3 class="market-name">Malaysia <i class="fa-solid fa-arrow-up-right-from-square market-link-icon"></i></h3>
+              <span class="market-domain">shopee.com.my</span>
+              <span class="market-badge">Southeast Asia</span>
+            </div>
+          </a>
+
+          <!-- Thailand -->
+          <a href="shopee-thailand-api.html" class="market-card glass-card">
+            <div class="flag-wrapper">
+              <svg class="flag-svg" viewBox="0 0 640 480">
+                <rect width="640" height="480" fill="#a51931"/>
+                <rect y="80" width="640" height="320" fill="#f4f5f8"/>
+                <rect y="160" width="640" height="160" fill="#2d2a4a"/>
+              </svg>
+            </div>
+            <div class="market-info">
+              <h3 class="market-name">Thailand <i class="fa-solid fa-arrow-up-right-from-square market-link-icon"></i></h3>
+              <span class="market-domain">shopee.co.th</span>
+              <span class="market-badge">Southeast Asia</span>
+            </div>
+          </a>
+
+          <!-- Philippines -->
+          <a href="shopee-philippines-api.html" class="market-card glass-card">
+            <div class="flag-wrapper">
+              <svg class="flag-svg" viewBox="0 0 640 480">
+                <rect width="640" height="240" fill="#0038a8"/>
+                <rect y="240" width="640" height="240" fill="#ce1126"/>
+                <polygon points="0,0 280,240 0,480" fill="#ffffff"/>
+                <circle cx="95" cy="240" r="32" fill="#fcd116"/>
+              </svg>
+            </div>
+            <div class="market-info">
+              <h3 class="market-name">Philippines <i class="fa-solid fa-arrow-up-right-from-square market-link-icon"></i></h3>
+              <span class="market-domain">shopee.ph</span>
+              <span class="market-badge">Southeast Asia</span>
+            </div>
+          </a>
+
+          <!-- Vietnam -->
+          <a href="shopee-vietnam-api.html" class="market-card glass-card">
+            <div class="flag-wrapper">
+              <svg class="flag-svg" viewBox="0 0 640 480">
+                <rect width="640" height="480" fill="#da251d"/>
+                <polygon points="320,130 355,238 468,238 376,305 411,413 320,346 229,413 264,305 172,238 285,238" fill="#ffff00"/>
+              </svg>
+            </div>
+            <div class="market-info">
+              <h3 class="market-name">Vietnam <i class="fa-solid fa-arrow-up-right-from-square market-link-icon"></i></h3>
+              <span class="market-domain">shopee.vn</span>
+              <span class="market-badge">Southeast Asia</span>
+            </div>
+          </a>
+
+          <!-- Indonesia -->
+          <a href="shopee-indonesia-api.html" class="market-card glass-card">
+            <div class="flag-wrapper">
+              <svg class="flag-svg" viewBox="0 0 640 480">
+                <rect width="640" height="240" fill="#ce1126"/>
+                <rect y="240" width="640" height="240" fill="#ffffff"/>
+              </svg>
+            </div>
+            <div class="market-info">
+              <h3 class="market-name">Indonesia <i class="fa-solid fa-arrow-up-right-from-square market-link-icon"></i></h3>
+              <span class="market-domain">shopee.co.id</span>
+              <span class="market-badge">Southeast Asia</span>
+            </div>
+          </a>
+
+          <!-- Mexico -->
+          <a href="shopee-mexico-api.html" class="market-card glass-card">
+            <div class="flag-wrapper">
+              <svg class="flag-svg" viewBox="0 0 640 480">
+                <rect width="213" height="480" fill="#006847"/>
+                <rect x="213" width="214" height="480" fill="#ffffff"/>
+                <rect x="427" width="213" height="480" fill="#ce1126"/>
+                <circle cx="320" cy="240" r="35" fill="#a25c27"/>
+              </svg>
+            </div>
+            <div class="market-info">
+              <h3 class="market-name">Mexico <i class="fa-solid fa-arrow-up-right-from-square market-link-icon"></i></h3>
+              <span class="market-domain">shopee.com.mx</span>
+              <span class="market-badge">Latin America</span>
+            </div>
+          </a>
+
+          <!-- Argentina -->
+          <a href="shopee-argentina-api.html" class="market-card glass-card">
+            <div class="flag-wrapper">
+              <svg class="flag-svg" viewBox="0 0 640 480">
+                <rect width="640" height="160" fill="#74acdf"/>
+                <rect y="160" width="640" height="160" fill="#ffffff"/>
+                <rect y="320" width="640" height="160" fill="#74acdf"/>
+                <circle cx="320" cy="240" r="35" fill="#f6b40e"/>
+              </svg>
+            </div>
+            <div class="market-info">
+              <h3 class="market-name">Argentina <i class="fa-solid fa-arrow-up-right-from-square market-link-icon"></i></h3>
+              <span class="market-domain">shopee.com.ar</span>
+              <span class="market-badge">Latin America</span>
+            </div>
+          </a>
+
+          <!-- Cambodia -->
+          <a href="shopee-cambodia-api.html" class="market-card glass-card">
+            <div class="flag-wrapper">
+              <svg class="flag-svg" viewBox="0 0 640 480">
+                <rect width="640" height="120" fill="#032ea1"/>
+                <rect y="120" width="640" height="240" fill="#e00025"/>
+                <rect y="360" width="640" height="120" fill="#032ea1"/>
+                <polygon points="320,160 360,240 340,240 340,300 300,300 300,240 280,240" fill="#ffffff"/>
+              </svg>
+            </div>
+            <div class="market-info">
+              <h3 class="market-name">Cambodia <i class="fa-solid fa-arrow-up-right-from-square market-link-icon"></i></h3>
+              <span class="market-domain">shopee.com.kh</span>
+              <span class="market-badge">Southeast Asia</span>
+            </div>
+          </a>
+
+          <!-- Laos -->
+          <a href="shopee-laos-api.html" class="market-card glass-card">
+            <div class="flag-wrapper">
+              <svg class="flag-svg" viewBox="0 0 640 480">
+                <rect width="640" height="120" fill="#ce1126"/>
+                <rect y="120" width="640" height="240" fill="#002868"/>
+                <rect y="360" width="640" height="120" fill="#ce1126"/>
+                <circle cx="320" cy="240" r="70" fill="#ffffff"/>
+              </svg>
+            </div>
+            <div class="market-info">
+              <h3 class="market-name">Laos <i class="fa-solid fa-arrow-up-right-from-square market-link-icon"></i></h3>
+              <span class="market-domain">shopee.la</span>
+              <span class="market-badge">Southeast Asia</span>
+            </div>
+          </a>
+
+          <!-- Taiwan -->
+          <a href="shopee-taiwan-api.html" class="market-card glass-card">
+            <div class="flag-wrapper">
+              <svg class="flag-svg" viewBox="0 0 640 480">
+                <rect width="640" height="480" fill="#fe0000"/>
+                <rect width="320" height="240" fill="#000095"/>
+                <circle cx="160" cy="120" r="45" fill="#ffffff"/>
+              </svg>
+            </div>
+            <div class="market-info">
+              <h3 class="market-name">Taiwan <i class="fa-solid fa-arrow-up-right-from-square market-link-icon"></i></h3>
+              <span class="market-domain">shopee.tw</span>
+              <span class="market-badge">East Asia</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live Data Coverage Preview Section -->
+    <section class="section live-stream-section" id="live-stream">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <div class="section-tag-dot"><span class="orange-dot">•</span> LIVE DATA COVERAGE PREVIEW</div>
+          <h2 class="section-title">Real-time data across all Shopee markets</h2>
+          <p class="section-subtitle">
+            Live product monitoring across 12 global active Shopee markets with complete product-level data coverage and enterprise-grade data validation.
+          </p>
+        </div>
+
+        <!-- Live Stream Table Card -->
+        <div class="live-stream-card glass-card">
+          <!-- Card Header Bar -->
+          <div class="stream-card-header">
+            <div class="header-left">
+              <i class="fa-solid fa-wave-square pulse-icon"></i>
+              <span class="header-title">REAL-TIME MULTI-MARKET PRODUCT DATA STREAM</span>
+            </div>
+            <div class="header-right">
+              <span class="accuracy-badge">
+                <i class="fa-solid fa-circle-check"></i> 99.85%+ DATA ACCURACY
+              </span>
+              <span class="live-badge">
+                <span class="live-dot"></span> LIVE
+              </span>
+            </div>
+          </div>
+
+          <!-- Table Wrapper -->
+          <div class="stream-table-wrapper">
+            <table class="stream-table">
+              <thead>
+                <tr>
+                  <th>MARKET</th>
+                  <th>PRODUCT</th>
+                  <th>PRICE</th>
+                  <th>DATA STATUS</th>
+                  <th>RATING</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Row 1: BR -->
+                <tr>
+                  <td>
+                    <div class="market-cell">
+                      <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/br.svg" alt="Brazil Flag" class="table-flag">
+                      <span class="m-code">BR</span>
+                      <span class="m-shopee">SHOPEE-BR</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="product-cell">
+                      <div class="p-title">Celular Samsung Galaxy A17 5G Com IA</div>
+                      <div class="p-id">item_id: 26544750990</div>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="price-val">R$ 1.289,15</span>
+                  </td>
+                  <td>
+                    <span class="status-pill status-complete">
+                      <i class="fa-regular fa-circle-check"></i> Complete dataset
+                    </span>
+                  </td>
+                  <td>
+                    <div class="rating-cell">
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <span class="r-score">4.8</span>
+                      <span class="r-count">(5 reviews)</span>
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- Row 2: SG -->
+                <tr>
+                  <td>
+                    <div class="market-cell">
+                      <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/sg.svg" alt="Singapore Flag" class="table-flag">
+                      <span class="m-code">SG</span>
+                      <span class="m-shopee">SHOPEE-SG</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="product-cell">
+                      <div class="p-title">Apple iPhone 15 Pro Max 256GB</div>
+                      <div class="p-id">item_id: 19827364120</div>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="price-val">S$ 1,649.00</span>
+                  </td>
+                  <td>
+                    <span class="status-pill status-complete">
+                      <i class="fa-regular fa-circle-check"></i> Complete dataset
+                    </span>
+                  </td>
+                  <td>
+                    <div class="rating-cell">
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <span class="r-score">4.95</span>
+                      <span class="r-count">(850 reviews)</span>
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- Row 3: TH -->
+                <tr>
+                  <td>
+                    <div class="market-cell">
+                      <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/th.svg" alt="Thailand Flag" class="table-flag">
+                      <span class="m-code">TH</span>
+                      <span class="m-shopee">SHOPEE-TH</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="product-cell">
+                      <div class="p-title">Logitech MX Master 3S Wireless Mouse</div>
+                      <div class="p-id">item_id: 88291039481</div>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="price-val">฿ 3,590.00</span>
+                  </td>
+                  <td>
+                    <span class="status-pill status-verified">
+                      <i class="fa-regular fa-circle-check"></i> Verified payload
+                    </span>
+                  </td>
+                  <td>
+                    <div class="rating-cell">
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <span class="r-score">4.88</span>
+                      <span class="r-count">(430 reviews)</span>
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- Row 4: MY -->
+                <tr>
+                  <td>
+                    <div class="market-cell">
+                      <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/my.svg" alt="Malaysia Flag" class="table-flag">
+                      <span class="m-code">MY</span>
+                      <span class="m-shopee">SHOPEE-MY</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="product-cell">
+                      <div class="p-title">Samsung Galaxy S24 Ultra 512GB</div>
+                      <div class="p-id">item_id: 77291049281</div>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="price-val">RM 5,299.00</span>
+                  </td>
+                  <td>
+                    <span class="status-pill status-complete">
+                      <i class="fa-regular fa-circle-check"></i> Complete dataset
+                    </span>
+                  </td>
+                  <td>
+                    <div class="rating-cell">
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <span class="r-score">4.92</span>
+                      <span class="r-count">(2.1k reviews)</span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Card Footer Line -->
+          <div class="stream-card-footer">
+            <span class="footer-dot-item"><span class="green-dot"></span> Data updated in real-time</span>
+            <span class="footer-sep">•</span>
+            <span class="footer-dot-item">All prices in local currency</span>
+            <span class="footer-sep">•</span>
+            <span class="footer-dot-item">Ratings from Shopee</span>
+          </div>
+        </div>
+
+        <!-- 4 Metrics Cards below Table -->
+        <div class="stream-metrics-grid glass-card">
+          <div class="stream-metric-card">
+            <div class="metric-icon-circle">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <div class="metric-body">
+              <div class="metric-num">8</div>
+              <div class="metric-title">Active Markets</div>
+              <div class="metric-sub">Global Shopee coverage</div>
+            </div>
+          </div>
+
+          <div class="stream-metric-card">
+            <div class="metric-icon-circle">
+              <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <div class="metric-body">
+              <div class="metric-num">10M+</div>
+              <div class="metric-title">Products Monitored</div>
+              <div class="metric-sub">And growing every day</div>
+            </div>
+          </div>
+
+          <div class="stream-metric-card">
+            <div class="metric-icon-circle">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <div class="metric-body">
+              <div class="metric-num">Real-time</div>
+              <div class="metric-title">Update Frequency</div>
+              <div class="metric-sub">Continuous live collection</div>
+            </div>
+          </div>
+
+          <div class="stream-metric-card">
+            <div class="metric-icon-circle">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div class="metric-body">
+              <div class="metric-num">99.8%+</div>
+              <div class="metric-title">Data Accuracy</div>
+              <div class="metric-sub">Enterprise-grade validation</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Tagline -->
+        <div class="live-stream-tagline text-center">
+          <i class="fa-solid fa-shield-halved text-accent"></i>
+          <span>Built for enterprises that demand accurate, complete, and real-time marketplace data.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Raw PDP get_pc JSON Feature Highlight Banner -->
+    <section class="section raw-json-banner-section" id="raw-json">
+      <div class="section-container">
+        <div class="raw-json-hero-card glass-card">
+          <div class="raw-json-header text-center">
+            <div class="section-tag">FULL PDP RAW RESPONSE COVERAGE</div>
+            <h2 class="section-title">Full PDP <code>get_pc</code> Raw JSON Response Included</h2>
+            <p class="section-subtitle">
+              We provide complete, un-truncated Shopee PDP <code>get_pc</code> raw JSON response payloads. Get total access to native item structures, complete variation arrays, tier indices, shipping channel data, vouchers, and seller metadata exactly as returned by Shopee servers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What We Provide Section -->
+    <section class="section offerings-section" id="offerings">
+      <div class="section-container" id="sample-dataset">
+        <div class="section-header text-center">
+          <div class="section-tag">COMPREHENSIVE DATA SCOPE</div>
+          <h2 class="section-title">What we provide</h2>
+          <p class="section-subtitle">Deep, granular marketplace intelligence for structured business decision-making, powered by complete <code>get_pc</code> PDP raw JSON responses.</p>
+        </div>
+
+        <div class="offerings-tabs">
+          <button class="tab-btn active" data-target="tab-rawjson">
+            <i class="fa-solid fa-code"></i> Full PDP get_pc Raw JSON
+          </button>
+          <button class="tab-btn" data-target="tab-product">
+            <i class="fa-solid fa-box"></i> Product information
+          </button>
+          <button class="tab-btn" data-target="tab-inventory">
+            <i class="fa-solid fa-warehouse"></i> Inventory & availability
+          </button>
+          <button class="tab-btn" data-target="tab-sales">
+            <i class="fa-solid fa-star"></i> Sales & ratings
+          </button>
+          <button class="tab-btn" data-target="tab-media">
+            <i class="fa-solid fa-images"></i> Media assets
+          </button>
+          <button class="tab-btn" data-target="tab-seller">
+            <i class="fa-solid fa-store"></i> Seller information
+          </button>
+        </div>
+
+        <div class="offerings-content-wrapper">
+          <!-- Tab 0: Full PDP get_pc Raw JSON (PRIMARY FEATURED PREVIEW) -->
+          <div class="tab-content active" id="tab-rawjson">
+            <div class="offering-detail-grid">
+              <div class="offering-main-info">
+                <h3>Full PDP <code>get_pc</code> Raw JSON Response</h3>
+                <p>We deliver complete, raw <code>get_pc</code> response objects directly containing all item, model, tier variation, price structure, and shipping attributes.</p>
+                <ul class="feature-attribute-list">
+                  <li class="attribute-item">
+                    <div class="attr-header">
+                      <i class="fa-solid fa-circle-check attr-icon"></i>
+                      <span class="attr-title">Complete Item Metadata</span>
+                    </div>
+                    <div class="attr-details">
+                      <code class="code-pill">item_id</code>
+                      <code class="code-pill">shop_id</code>
+                      <code class="code-pill">status</code>
+                      <code class="code-pill">cat_id</code>
+                      <code class="code-pill">ctime</code>
+                    </div>
+                  </li>
+
+                  <li class="attribute-item">
+                    <div class="attr-header">
+                      <i class="fa-solid fa-circle-check attr-icon"></i>
+                      <span class="attr-title">Full Variation Models</span>
+                    </div>
+                    <div class="attr-details">
+                      <code class="code-pill">models</code> array with <code class="code-pill">model_id</code>, <code class="code-pill">tier_index</code>, prices & stock breakdown
+                    </div>
+                  </li>
+
+                  <li class="attribute-item">
+                    <div class="attr-header">
+                      <i class="fa-solid fa-circle-check attr-icon"></i>
+                      <span class="attr-title">Tier Variations & Images</span>
+                    </div>
+                    <div class="attr-details">
+                      <code class="code-pill">tier_variations</code> with options, option images, and translations
+                    </div>
+                  </li>
+
+                  <li class="attribute-item">
+                    <div class="attr-header">
+                      <i class="fa-solid fa-circle-check attr-icon"></i>
+                      <span class="attr-title">Product Price Matrix</span>
+                    </div>
+                    <div class="attr-details">
+                      <code class="code-pill">product_price</code> with <code class="code-pill">single_value</code>, <code class="code-pill">price_before_discount</code> & vouchers
+                    </div>
+                  </li>
+
+                  <li class="attribute-item">
+                    <div class="attr-header">
+                      <i class="fa-solid fa-circle-check attr-icon"></i>
+                      <span class="attr-title">Product Images & Gallery</span>
+                    </div>
+                    <div class="attr-details">
+                      <code class="code-pill">product_images</code> array & gallery contents
+                    </div>
+                  </li>
+
+                  <li class="attribute-item">
+                    <div class="attr-header">
+                      <i class="fa-solid fa-circle-check attr-icon"></i>
+                      <span class="attr-title">Product Shipping Details</span>
+                    </div>
+                    <div class="attr-details">
+                      <code class="code-pill">product_shipping</code> channel infos, shipping fee & delivery SLA
+                    </div>
+                  </li>
+
+                  <li class="attribute-item">
+                    <div class="attr-header">
+                      <i class="fa-solid fa-circle-check attr-icon"></i>
+                      <span class="attr-title">Shop Vouchers & Promotions</span>
+                    </div>
+                    <div class="attr-details">
+                      <code class="code-pill">shop_vouchers</code> array with voucher codes & discount values
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="offering-preview-box glass-card">
+                <div class="preview-header-sm">
+                  <span>Structured Data Preview — Full PDP get_pc Raw JSON</span>
+                  <span class="pill-tag"><i class="fa-solid fa-code"></i> Raw Payload</span>
+                </div>
+                <div class="code-preview-scroll">
+                  <pre class="code-preview"><code id="raw-json-code">Loading complete get_pc raw JSON response...</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 1: Product Info -->
+          <div class="tab-content" id="tab-product">
+            <div class="offering-detail-grid">
+              <div class="offering-main-info">
+                <h3>Product information</h3>
+                <p>Complete product catalog data captured down to individual variant levels and attributes.</p>
+                <ul class="attribute-list">
+                  <li><i class="fa-solid fa-check text-accent"></i> <strong>Product title</strong></li>
+                  <li><i class="fa-solid fa-check text-accent"></i> <strong>Current price</strong></li>
+                  <li><i class="fa-solid fa-check text-accent"></i> <strong>Original price</strong></li>
+                  <li><i class="fa-solid fa-check text-accent"></i> <strong>Discount</strong></li>
+                  <li><i class="fa-solid fa-check text-accent"></i> <strong>Brand</strong></li>
+                  <li><i class="fa-solid fa-check text-accent"></i> <strong>Category</strong></li>
+                  <li><i class="fa-solid fa-check text-accent"></i> <strong>Product attributes</strong></li>
+                </ul>
+              </div>
+              <div class="offering-preview-box glass-card">
+                <div class="preview-header-sm">
+                  <span>Structured Data Preview — Item Details</span>
+                  <span class="pill-tag">Live Feed</span>
+                </div>
+                <pre class="code-preview"><code>{
+  <span class="key">"item_id"</span>: <span class="num">26544750990</span>,
+  <span class="key">"title"</span>: <span class="str">"Celular Samsung Galaxy A17 5G Com IA..."</span>,
+  <span class="key">"current_price"</span>: <span class="num">128915000</span>,
+  <span class="key">"price_before_discount"</span>: <span class="num">135700000</span>,
+  <span class="key">"discount"</span>: <span class="str">"5%"</span>,
+  <span class="key">"brand"</span>: <span class="str">"Samsung"</span>,
+  <span class="key">"categories"</span>: [
+    { <span class="key">"catid"</span>: <span class="num">100013</span>, <span class="key">"display_name"</span>: <span class="str">"Celulares e Dispositivos"</span> }
+  ]
+}</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 2: Inventory & Availability -->
+          <div class="tab-content" id="tab-inventory">
+            <div class="offering-detail-grid">
+              <div class="offering-main-info">
+                <h3>Inventory & availability</h3>
+                <p>Track stock levels, variant availability, and seller operational status in real-time.</p>
+                <ul class="attribute-list">
+                  <li><i class="fa-solid fa-check text-accent"></i> <strong>Stock availability</strong></li>
+                  <li><i class="fa-solid fa-check text-accent"></i> <strong>Variation inventory</strong></li>
+                  <li><i class="fa-solid fa-check text-accent"></i> <strong>Seller availability</strong></li>
+                </ul>
+              </div>
+              <div class="offering-preview-box glass-card">
+                <div class="preview-header-sm">
+                  <span>Inventory Matrix Preview</span>
+                  <span class="pill-tag">Live Sync</span>
+                </div>
+                <pre class="code-preview"><code>{
+  <span class="key">"item_status"</span>: <span class="str">"normal"</span>,
+  <span class="key">"is_unavailable"</span>: <span class="bool">false</span>,
+  <span class="key">"models"</span>: [
+    { <span class="key">"name"</span>: <span class="str">"Cinza 5G"</span>, <span class="key">"has_stock"</span>: <span class="bool">true</span>, <span class="key">"model_id"</span>: <span class="num">446209144611</span> },
+    { <span class="key">"name"</span>: <span class="str">"Preto 4G"</span>, <span class="key">"has_stock"</span>: <span class="bool">false</span>, <span class="key">"model_id"</span>: <span class="num">446209144612</span> }
+  ]
+}</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 3: Sales & Ratings -->
+          <div class="tab-content" id="tab-sales">
+            <div class="offering-detail-grid">
+              <div class="offering-main-info">
+                <h3>Sales & ratings</h3>
+                <p>Monitor market demand velocity, product performance ratings, and consumer reviews.</p>
+                <ul class="attribute-list">
+                  <li><i class="fa-solid fa-check text-accent"></i> <strong>Units sold</strong></li>
+                  <li><i class="fa-solid fa-check text-accent"></i> <strong>Product rating</strong></li>
+                  <li><i class="fa-solid fa-check text-accent"></i> <strong>Review count</strong></li>
+                </ul>
+              </div>
+              <div class="offering-preview-box glass-card">
+                <div class="preview-header-sm">
+                  <span>Performance Data Preview</span>
+                  <span class="pill-tag">Market Metrics</span>
+                </div>
+                <pre class="code-preview"><code>{
+  <span class="key">"product_review"</span>: {
+    <span class="key">"rating_star"</span>: <span class="num">4.8</span>,
+    <span class="key">"total_rating_count"</span>: <span class="num">5</span>,
+    <span class="key">"historical_sold_display"</span>: <span class="str">"11"</span>,
+    <span class="key">"liked_count"</span>: <span class="num">195</span>
+  }
+}</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 4: Media Assets -->
+          <div class="tab-content" id="tab-media">
+            <div class="offering-detail-grid">
+              <div class="offering-main-info">
+                <h3>Media assets</h3>
+                <p>Extract high-resolution media URLs for visual product catalog enrichment.</p>
+                <ul class="attribute-list">
+                  <li><i class="fa-solid fa-check text-accent"></i> <strong>Product images</strong></li>
+                  <li><i class="fa-solid fa-check text-accent"></i> <strong>Product videos</strong></li>
+                  <li><i class="fa-solid fa-check text-accent"></i> <strong>Variation images</strong></li>
+                </ul>
+              </div>
+              <div class="offering-preview-box glass-card">
+                <div class="preview-header-sm">
+                  <span>Media Pipeline Preview</span>
+                  <span class="pill-tag">Asset Links</span>
+                </div>
+                <pre class="code-preview"><code>{
+  <span class="key">"product_images"</span>: {
+    <span class="key">"images"</span>: [
+      <span class="str">"br-11134207-820ls-mq3hk73dixoh28"</span>,
+      <span class="str">"sg-11134201-820nl-mnvlzpwclywx52"</span>
+    ],
+    <span class="key">"first_tier_variations"</span>: [
+      { <span class="key">"name"</span>: <span class="str">"Cinza 5G"</span>, <span class="key">"image"</span>: <span class="str">"br-11134207-820mh-mqnmr56pbrb52b"</span> }
+    ]
+  }
+}</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 5: Seller Information -->
+          <div class="tab-content" id="tab-seller">
+            <div class="offering-detail-grid">
+              <div class="offering-main-info">
+                <h3>Seller information</h3>
+                <p>Analyze merchant profiles, shop operational metrics, and vendor reputation.</p>
+                <ul class="attribute-list">
+                  <li><i class="fa-solid fa-check text-accent"></i> <strong>Seller details</strong></li>
+                  <li><i class="fa-solid fa-check text-accent"></i> <strong>Shop rating</strong></li>
+                  <li><i class="fa-solid fa-check text-accent"></i> <strong>Shop metadata</strong></li>
+                </ul>
+              </div>
+              <div class="offering-preview-box glass-card">
+                <div class="preview-header-sm">
+                  <span>Merchant Profile Preview</span>
+                  <span class="pill-tag">Shop Insights</span>
+                </div>
+                <pre class="code-preview"><code>{
+  <span class="key">"shop_id"</span>: <span class="num">440707495</span>,
+  <span class="key">"shop_location"</span>: <span class="str">"São Paulo"</span>,
+  <span class="key">"shop_vouchers"</span>: [
+    { <span class="key">"shop_name"</span>: <span class="str">"WDCL Comércio"</span>, <span class="key">"voucher_code"</span>: <span class="str">"WDCLRENOV"</span> }
+  ]
+}</code></pre>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Companies Choose Us Section -->
+    <section class="section why-us-section" id="why-us">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <div class="section-tag">THE ENTERPRISE ADVANTAGE</div>
+          <h2 class="section-title">Why companies choose us</h2>
+          <p class="section-subtitle">Infrastructure designed from the ground up for stability, accuracy, and scale.</p>
+        </div>
+
+        <div class="why-us-grid">
+          <!-- Card 1 -->
+          <div class="feature-card glass-card">
+            <div class="feature-card-header">
+              <div class="feature-icon-box">
+                <i class="fa-solid fa-bullseye"></i>
+              </div>
+              <span class="feature-num">01</span>
+            </div>
+            <h3 class="feature-title">High accuracy</h3>
+            <p class="feature-desc">Consistent product-level accuracy across multiple Shopee markets.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="feature-card glass-card">
+            <div class="feature-card-header">
+              <div class="feature-icon-box">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <span class="feature-num">02</span>
+            </div>
+            <h3 class="feature-title">Live data</h3>
+            <p class="feature-desc">Fresh product information collected in real time.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="feature-card glass-card">
+            <div class="feature-card-header">
+              <div class="feature-icon-box">
+                <i class="fa-solid fa-layer-group"></i>
+              </div>
+              <span class="feature-num">03</span>
+            </div>
+            <h3 class="feature-title">Scalable infrastructure</h3>
+            <p class="feature-desc">Designed for enterprise-scale data requirements.</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="feature-card glass-card">
+            <div class="feature-card-header">
+              <div class="feature-icon-box">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <span class="feature-num">04</span>
+            </div>
+            <h3 class="feature-title">Reliable delivery</h3>
+            <p class="feature-desc">Stable infrastructure with continuous quality monitoring.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industry Use Cases Section -->
+    <section class="section use-cases-section" id="use-cases">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <div class="section-tag">BUSINESS APPLICATIONS</div>
+          <h2 class="section-title">Industry use cases</h2>
+          <p class="section-subtitle">Practical business applications across key e-commerce intelligence domains.</p>
+        </div>
+
+        <div class="use-cases-grid">
+          <div class="use-case-card glass-card">
+            <div class="uc-icon"><i class="fa-solid fa-tags"></i></div>
+            <h3>Price monitoring</h3>
+            <p>Track pricing movements, MAP compliance, and flash sale discounts across competing sellers instantly.</p>
+          </div>
+
+          <div class="use-case-card glass-card">
+            <div class="uc-icon"><i class="fa-solid fa-chess"></i></div>
+            <h3>Competitive intelligence</h3>
+            <p>Analyze rival seller assortments, promotional strategies, and market positioning across international regions.</p>
+          </div>
+
+          <div class="use-case-card glass-card">
+            <div class="uc-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <h3>E-commerce analytics</h3>
+            <p>Power macro retail dashboards, regional growth benchmarks, and categorical share-of-shelf reporting.</p>
+          </div>
+
+          <div class="use-case-card glass-card">
+            <div class="uc-icon"><i class="fa-solid fa-folder-tree"></i></div>
+            <h3>Product catalog enrichment</h3>
+            <p>Enhance local product master databases with rich Shopee product titles, images, specifications, and brand metadata.</p>
+          </div>
+
+          <div class="use-case-card glass-card">
+            <div class="uc-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+            <h3>Market research</h3>
+            <p>Evaluate entry points into new Southeast Asian and Latin American markets with historical pricing & rating analytics.</p>
+          </div>
+
+          <div class="use-case-card glass-card">
+            <div class="uc-icon"><i class="fa-solid fa-copyright"></i></div>
+            <h3>Brand monitoring</h3>
+            <p>Identify unauthorized resellers, counterfeit product listings, and trademark infringements across all 12 Shopee domains.</p>
+          </div>
+
+          <div class="use-case-card glass-card">
+            <div class="uc-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+            <h3>Inventory tracking</h3>
+            <p>Monitor stock exhaustion rates, stockouts, and supply chain availability changes across top marketplace vendors.</p>
+          </div>
+
+          <div class="use-case-card glass-card">
+            <div class="uc-icon"><i class="fa-solid fa-brain"></i></div>
+            <h3>Marketplace intelligence</h3>
+            <p>Feed algorithmic pricing models, demand forecasting engines, and automated repricing software.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Frequently Asked Questions (FAQ) Section -->
+    <section class="section faq-section" id="faq">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <div class="section-tag-dot"><span class="orange-dot">•</span> FREQUENTLY ASKED QUESTIONS</div>
+          <h2 class="section-title">Everything you need to know about Shopee product data</h2>
+          <p class="section-subtitle">
+            Answers to common questions regarding REST API keys, direct data feeds, payload structures, accuracy guarantees, and market coverage.
+          </p>
+        </div>
+
+        <div class="faq-grid">
+          <div class="faq-card glass-card">
+            <div class="faq-question">
+              <i class="fa-solid fa-circle-question text-accent"></i>
+              <h3>How do I get API keys for real-time Shopee PDP product data?</h3>
+            </div>
+            <div class="faq-answer">
+              <p>You can request API access directly through our <a href="#contact" class="text-accent">inquiry form</a> or contact team. We provision production and sandbox API credentials instantly with full REST API documentation and code samples.</p>
+            </div>
+          </div>
+
+          <div class="faq-card glass-card">
+            <div class="faq-question">
+              <i class="fa-solid fa-circle-question text-accent"></i>
+              <h3>Can I receive direct automated data feeds without writing code?</h3>
+            </div>
+            <div class="faq-answer">
+              <p>Yes! We deliver automated, scheduled raw datasets (in JSON, CSV, or Parquet format) directly to your AWS S3 bucket, Google Cloud Storage, or automated webhook endpoints for zero-code integration.</p>
+            </div>
+          </div>
+
+          <div class="faq-card glass-card">
+            <div class="faq-question">
+              <i class="fa-solid fa-circle-question text-accent"></i>
+              <h3>What data fields are included in the Full PDP <code>get_pc</code> Raw JSON payload?</h3>
+            </div>
+            <div class="faq-answer">
+              <p>Our payloads include 100% complete, untruncated Shopee response attributes: <code>item_id</code>, <code>shop_id</code>, <code>models</code> variation arrays, <code>tier_variations</code> with option images, <code>product_price</code> single values & discounts, <code>product_shipping</code> SLA, seller metadata, and active vouchers.</p>
+            </div>
+          </div>
+
+          <div class="faq-card glass-card">
+            <div class="faq-question">
+              <i class="fa-solid fa-circle-question text-accent"></i>
+              <h3>Which international Shopee markets are covered?</h3>
+            </div>
+            <div class="faq-answer">
+              <p>We cover all 12 active major Shopee markets: <strong>Brazil (BR)</strong>, <strong>Mexico (MX)</strong>, <strong>Argentina (AR)</strong>, <strong>Singapore (SG)</strong>, <strong>Malaysia (MY)</strong>, <strong>Thailand (TH)</strong>, <strong>Philippines (PH)</strong>, <strong>Vietnam (VN)</strong>, <strong>Indonesia (ID)</strong>, <strong>Cambodia (KH)</strong>, <strong>Laos (LA)</strong>, and <strong>Taiwan (TW)</strong>.</p>
+            </div>
+          </div>
+
+          <div class="faq-card glass-card">
+            <div class="faq-question">
+              <i class="fa-solid fa-circle-question text-accent"></i>
+              <h3>Does the $5 / 1k requests pricing cover all countries in a single multi-market API?</h3>
+            </div>
+            <div class="faq-answer">
+              <p>No. We provide dedicated APIs for a single Shopee market based on your specific requirements. <strong>Choose your region — we will provide a dedicated API for that market.</strong> Each API is engineered for your selected country or region, and the fixed pricing of <strong>$5 per 1,000 requests</strong> applies per individual market API.</p>
+            </div>
+          </div>
+
+          <div class="faq-card glass-card">
+            <div class="faq-question">
+              <i class="fa-solid fa-circle-question text-accent"></i>
+              <h3>What is the data accuracy guarantee and uptime SLA?</h3>
+            </div>
+            <div class="faq-answer">
+              <p>We guarantee 99.8%+ field-level data accuracy through continuous validation pipelines, backed by a 99.9% uptime SLA for high-throughput enterprise requirements.</p>
+            </div>
+          </div>
+
+          <div class="faq-card glass-card">
+            <div class="faq-question">
+              <i class="fa-solid fa-circle-question text-accent"></i>
+              <h3>Why choose NodusData over general web scraping APIs like Bright Data or Oxylabs?</h3>
+            </div>
+            <div class="faq-answer">
+              <p>General scraping APIs charge high monthly retainers ($300–$500+/mo), bill for failed attempts, and return generic HTML without full variation arrays. NodusData is 100% specialized in Shopee PDP data, offering a fixed rate of <strong>$5 per 1k successful requests</strong> ($0 charge for failed attempts) with complete <code>get_pc</code> raw JSON payloads.</p>
+            </div>
+          </div>
+
+          <div class="faq-card glass-card">
+            <div class="faq-question">
+              <i class="fa-solid fa-circle-question text-accent"></i>
+              <h3>How does NodusData handle Shopee's anti-bot protections & IP blocks?</h3>
+            </div>
+            <div class="faq-answer">
+              <p>NodusData operates a fully managed infrastructure with automated residential proxy rotation, CAPTCHA solving, and dynamic JS rendering. You receive instant, clean HTTP 200 OK JSON responses via simple REST API endpoints without managing proxy rotators or code fixes.</p>
+            </div>
+          </div>
+
+          <div class="faq-card glass-card">
+            <div class="faq-question">
+              <i class="fa-solid fa-circle-question text-accent"></i>
+              <h3>How can we request a custom dataset or pricing quote?</h3>
+            </div>
+            <div class="faq-answer">
+              <p>Simply click any "Contact us" or "Request API Keys" button on this page. Our data engineering team responds within 1 hour to customize endpoints, rate limits, and bulk extraction schedules to your exact requirements.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="section about-section" id="about">
+      <div class="section-container">
+        <div class="about-card glass-card text-center">
+          <h2 class="section-title">About us</h2>
+          <p class="about-text">
+            We specialize in enterprise-grade Shopee product data collection across major Southeast Asian and Latin American markets. Our infrastructure is built to deliver accurate, live, and structured marketplace data at scale.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section (Main Conversion Point) -->
+    <section class="section contact-section" id="contact">
+      <div class="section-container">
+        <div class="contact-card glass-card">
+          <div class="contact-grid">
+            <div class="contact-info">
+              <div class="section-tag">START YOUR DATA STREAM</div>
+              <h2 class="contact-title">Get in touch</h2>
+              <p class="contact-text">
+                For enterprise data requirements, market coverage inquiries, or custom data solutions, contact our team.
+              </p>
+              
+              <div class="contact-email-wrapper">
+                <span class="email-label">Official Email</span>
+                <div class="email-display-box" id="email-box">
+                  <i class="fa-regular fa-envelope"></i>
+                  <span class="email-text" id="email-text">contact@nodusdatahq.com</span>
+                  <button class="btn-copy-email" id="btn-copy-email" title="Copy email address">
+                    <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="contact-sla-badge">
+                <i class="fa-regular fa-clock"></i> Response time: Under 1 hour
+              </div>
+            </div>
+
+            <div class="contact-action-col">
+              <div class="action-box text-center">
+                <h3>Connect directly with our team</h3>
+                <p>Click below to open your email application or write a custom request.</p>
+                <div class="action-buttons">
+                  <a href="mailto:contact@nodusdatahq.com" class="btn btn-lg btn-primary btn-glow btn-block">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>Email us</span>
+                  </a>
+                  <button class="btn btn-lg btn-secondary btn-block" id="btn-open-modal">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <span>Quick Inquiry Form</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-icon">
+              <i class="fa-solid fa-circle-nodes"></i>
+            </div>
+            <span class="logo-text">Nodus<span class="logo-accent">Data</span></span>
+          </a>
+          <p class="footer-tagline">Enterprise-grade live product intelligence across Shopee marketplaces with complete PDP get_pc raw JSON coverage.</p>
+        </div>
+
+        <div class="footer-links-grid">
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#markets">Markets covered</a></li>
+              <li><a href="#accuracy">Data accuracy</a></li>
+              <li><a href="#raw-json">Full PDP get_pc Raw JSON</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#privacy-modal" class="modal-trigger" data-modal="privacy">Privacy policy</a></li>
+              <li><a href="#terms-modal" class="modal-trigger" data-modal="terms">Terms of service</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 NodusData Enterprise. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="#markets">Markets covered</a>
+          <span class="dot-sep">•</span>
+          <a href="#accuracy">Data accuracy</a>
+          <span class="dot-sep">•</span>
+          <a href="#contact">Contact</a>
+          <span class="dot-sep">•</span>
+          <a href="#privacy-modal" class="modal-trigger" data-modal="privacy">Privacy policy</a>
+          <span class="dot-sep">•</span>
+          <a href="#terms-modal" class="modal-trigger" data-modal="terms">Terms of service</a>
+        </div>
+      </div>
+
+      <div class="footer-disclaimer text-center" style="margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid rgba(255,255,255,0.06); font-size: 0.8rem; color: var(--text-muted);">
+        <p><i class="fa-solid fa-shield-halved text-accent"></i> <strong>Independent Data Provider Disclaimer:</strong> NodusData is an independent third-party market intelligence and web data extraction provider. All third-party platform names, trademarks, and logos belong to their respective owners and are referenced strictly for identification and formatting capabilities.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Quick Message Contact Modal -->
+  <div class="modal-backdrop" id="contact-modal">
+    <div class="modal-card glass-card">
+      <button class="modal-close" id="modal-close"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-header">
+        <h3>Get in touch</h3>
+        <p>For enterprise data requirements, market coverage inquiries, or custom data solutions, contact our team.</p>
+      </div>
+      <form class="modal-form" id="inquiry-form">
+        <div class="form-group">
+          <label for="form-name">Your Name</label>
+          <input type="text" id="form-name" placeholder="Name or Company" required>
+        </div>
+        <div class="form-group">
+          <label for="form-email">Your Work Email</label>
+          <input type="email" id="form-email" placeholder="email@company.com" required>
+        </div>
+        <div class="form-group">
+          <label for="form-market">Markets of Interest</label>
+          <select id="form-market">
+            <option value="all">All 12 Global Markets (BR, MX, AR, SG, MY, TH, PH, VN, ID, KH, LA, TW)</option>
+            <option value="br">Brazil (BR)</option>
+            <option value="mx">Mexico (MX)</option>
+            <option value="ar">Argentina (AR)</option>
+            <option value="sg">Singapore (SG)</option>
+            <option value="my">Malaysia (MY)</option>
+            <option value="th">Thailand (TH)</option>
+            <option value="ph">Philippines (PH)</option>
+            <option value="vn">Vietnam (VN)</option>
+            <option value="id">Indonesia (ID)</option>
+            <option value="kh">Cambodia (KH)</option>
+            <option value="la">Laos (LA)</option>
+            <option value="tw">Taiwan (TW)</option>
+            <option value="latam">Latin America Region (BR, MX, AR)</option>
+            <option value="sea">Southeast Asia Region (SG, MY, TH, PH, VN, ID, KH, LA)</option>
+            <option value="east_asia">East Asia Region (TW)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="form-message">Data Requirements & Full PDP JSON Access</label>
+          <textarea id="form-message" rows="4" placeholder="Describe product categories, get_pc raw JSON data needs, frequency, and scale..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block btn-glow">
+          <i class="fa-solid fa-paper-plane"></i> Send Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Privacy Policy Modal -->
+  <div class="modal-backdrop" id="privacy-modal">
+    <div class="modal-card glass-card modal-lg">
+      <button class="modal-close" data-close="privacy"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-header">
+        <h3>Privacy policy</h3>
+      </div>
+      <div class="modal-body-scroll">
+        <p>At NodusData Enterprise, we respect your privacy and process contact inquiries strictly to fulfill your data requirements.</p>
+        <h4>Data Collection</h4>
+        <p>We collect work email addresses and message content submitted voluntarily through our contact tools.</p>
+        <h4>Data Security</h4>
+        <p>Your details are protected using enterprise-level security protocols and never shared with third parties.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Terms of Service Modal -->
+  <div class="modal-backdrop" id="terms-modal">
+    <div class="modal-card glass-card modal-lg">
+      <button class="modal-close" data-close="terms"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-header">
+        <h3>Terms of service</h3>
+      </div>
+      <div class="modal-body-scroll">
+        <p>Our Shopee product data infrastructure is provided under strict reliability, transparent flat pricing, and guaranteed Service Level Agreements (SLA).</p>
+        <h4>Enterprise Commitments & SLA</h4>
+        <ul>
+          <li><strong>Pricing Fix Rate:</strong> $5 per 1,000 successful requests, regardless of volume fluctuations.</li>
+          <li><strong>Minimum Success Rate:</strong> 99% guaranteed payload delivery.</li>
+          <li><strong>Service Availability:</strong> 99.5% uptime backed by 24/7 automated monitoring.</li>
+          <li><strong>General Support Response:</strong> Within 1 business hour.</li>
+          <li><strong>Critical Incident Response:</strong> Within 4 hours.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toast-message">Copied contact@nodusdatahq.com to clipboard!</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

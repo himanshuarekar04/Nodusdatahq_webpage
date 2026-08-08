@@ -1,0 +1,28 @@
+# NodusData Enterprise - Stealth & Selective Indexing Configuration
+# Allows commercial search engine indexing while blocking aggressive marketplace crawlers & bots
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /internal/
+Disallow: /api/
+
+# Block specific marketplace & automated auditing crawlers
+User-agent: ShopeeBot
+Disallow: /
+
+User-agent: ShopeeCrawler
+Disallow: /
+
+User-agent: Shopee
+Disallow: /
+
+User-agent: ByteSpider
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+# Sitemap definition
+Sitemap: https://nodusdatahq.com/sitemap.xml
