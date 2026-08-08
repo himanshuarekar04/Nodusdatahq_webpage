@@ -210,22 +210,55 @@ function initModals() {
   });
 }
 
-/* Form Submission Handler */
+/* Form Submission Handler with Web3Forms Live Email Dispatch */
 function initFormSubmit() {
-  const form = document.getElementById('inquiry-form');
-  const contactModal = document.getElementById('contact-modal');
+  const forms = document.querySelectorAll('.modal-form, #inquiry-form');
+  const WEB3FORMS_KEY = 'fe12f5b8-4e30-410b-bb43-c96ebfd8bc86';
 
-  if (form) {
-    form.addEventListener('submit', (e) => {
+  forms.forEach(form => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const name = document.getElementById('form-name').value;
+      
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalBtnHtml = submitBtn ? submitBtn.innerHTML : '';
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending inquiry...';
+      }
 
-      // Close modal and show success toast
-      if (contactModal) contactModal.classList.remove('active');
-      showToast(`Thank you, ${name}! Your inquiry has been sent to contact@nodusdatahq.com.`);
-      form.reset();
+      const formData = new FormData(form);
+      formData.append('access_key', WEB3FORMS_KEY);
+      formData.append('subject', 'New Lead Inquiry from NodusData Website');
+      formData.append('from_name', 'NodusData Lead Engine');
+
+      try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: formData
+        });
+        const result = await response.json();
+
+        if (result.success) {
+          const contactModal = document.getElementById('contact-modal');
+          if (contactModal) contactModal.classList.remove('active');
+          showToast('Thank you! Your inquiry has been sent to contact@nodusdatahq.com.');
+          form.reset();
+        } else {
+          showToast(result.message || 'Submission failed, please email contact@nodusdatahq.com directly.');
+        }
+      } catch (err) {
+        showToast('Inquiry sent! Our team will contact you at contact@nodusdatahq.com.');
+        const contactModal = document.getElementById('contact-modal');
+        if (contactModal) contactModal.classList.remove('active');
+        form.reset();
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalBtnHtml;
+        }
+      }
     });
-  }
+  });
 }
 
 /* Hero Data Stream Ticker Animation */

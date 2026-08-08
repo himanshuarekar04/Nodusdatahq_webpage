@@ -1906,36 +1906,36 @@
       <form class="modal-form" id="inquiry-form">
         <div class="form-group">
           <label for="form-name">Your Name</label>
-          <input type="text" id="form-name" placeholder="Name or Company" required>
+          <input type="text" id="form-name" name="name" placeholder="Name or Company" required>
         </div>
         <div class="form-group">
           <label for="form-email">Your Work Email</label>
-          <input type="email" id="form-email" placeholder="email@company.com" required>
+          <input type="email" id="form-email" name="email" placeholder="email@company.com" required>
         </div>
         <div class="form-group">
           <label for="form-market">Markets of Interest</label>
-          <select id="form-market">
-            <option value="all">All 12 Global Markets (BR, MX, AR, SG, MY, TH, PH, VN, ID, KH, LA, TW)</option>
-            <option value="br">Brazil (BR)</option>
-            <option value="mx">Mexico (MX)</option>
-            <option value="ar">Argentina (AR)</option>
-            <option value="sg">Singapore (SG)</option>
-            <option value="my">Malaysia (MY)</option>
-            <option value="th">Thailand (TH)</option>
-            <option value="ph">Philippines (PH)</option>
-            <option value="vn">Vietnam (VN)</option>
-            <option value="id">Indonesia (ID)</option>
-            <option value="kh">Cambodia (KH)</option>
-            <option value="la">Laos (LA)</option>
-            <option value="tw">Taiwan (TW)</option>
-            <option value="latam">Latin America Region (BR, MX, AR)</option>
-            <option value="sea">Southeast Asia Region (SG, MY, TH, PH, VN, ID, KH, LA)</option>
-            <option value="east_asia">East Asia Region (TW)</option>
+          <select id="form-market" name="market">
+            <option value="All 12 Global Markets">All 12 Global Markets (BR, MX, AR, SG, MY, TH, PH, VN, ID, KH, LA, TW)</option>
+            <option value="Brazil (BR)">Brazil (BR)</option>
+            <option value="Mexico (MX)">Mexico (MX)</option>
+            <option value="Argentina (AR)">Argentina (AR)</option>
+            <option value="Singapore (SG)">Singapore (SG)</option>
+            <option value="Malaysia (MY)">Malaysia (MY)</option>
+            <option value="Thailand (TH)">Thailand (TH)</option>
+            <option value="Philippines (PH)">Philippines (PH)</option>
+            <option value="Vietnam (VN)">Vietnam (VN)</option>
+            <option value="Indonesia (ID)">Indonesia (ID)</option>
+            <option value="Cambodia (KH)">Cambodia (KH)</option>
+            <option value="Laos (LA)">Laos (LA)</option>
+            <option value="Taiwan (TW)">Taiwan (TW)</option>
+            <option value="Latin America Region">Latin America Region (BR, MX, AR)</option>
+            <option value="Southeast Asia Region">Southeast Asia Region (SG, MY, TH, PH, VN, ID, KH, LA)</option>
+            <option value="East Asia Region">East Asia Region (TW)</option>
           </select>
         </div>
         <div class="form-group">
           <label for="form-message">Data Requirements & Full PDP JSON Access</label>
-          <textarea id="form-message" rows="4" placeholder="Describe product categories, get_pc raw JSON data needs, frequency, and scale..." required></textarea>
+          <textarea id="form-message" name="message" rows="4" placeholder="Describe product categories, get_pc raw JSON data needs, frequency, and scale..." required></textarea>
         </div>
         <button type="submit" class="btn btn-primary btn-block btn-glow">
           <i class="fa-solid fa-paper-plane"></i> Send Request
