@@ -282,13 +282,22 @@ function initHeroDataTicker() {
 /* Header Scroll FX */
 function initScrollHeader() {
   const header = document.getElementById('header');
+  if (!header) return;
+  
+  let ticking = false;
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      header.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.7)';
-      header.style.borderBottomColor = 'rgba(255, 87, 34, 0.3)';
-    } else {
-      header.style.boxShadow = 'none';
-      header.style.borderBottomColor = 'rgba(255, 255, 255, 0.08)';
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        if (window.scrollY > 50) {
+          header.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.7)';
+          header.style.borderBottomColor = 'rgba(255, 87, 34, 0.3)';
+        } else {
+          header.style.boxShadow = 'none';
+          header.style.borderBottomColor = 'rgba(255, 255, 255, 0.08)';
+        }
+        ticking = false;
+      });
+      ticking = true;
     }
-  });
+  }, { passive: true });
 }
