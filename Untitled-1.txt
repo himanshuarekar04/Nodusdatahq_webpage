@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopee PDP Data API & Extraction Service | NodusData</title>
+  <meta name="description" content="NodusData provides high-speed Shopee PDP REST API keys & direct data feeds. Extract complete get_pc raw JSON, live prices, stock, & variation data across 12 global Shopee markets.">
+  <meta name="keywords" content="Shopee product API, Shopee product data, Shopee pricing API, Shopee inventory API, Shopee marketplace data, Bright Data alternative Shopee, Oxylabs Shopee API alternative, Apify Shopee actor alternative, ScraperAPI Shopee competitor, DataWeave Shopee alternative, top 5 e-commerce scrapers, best Shopee scraper API, Shopee PDP get_pc API, Shopee raw JSON payload, Shopee Python API SDK, Shopee price monitoring tool, Shopee MAP compliance tracker, Shopee anti-bot proxy bypass, managed Shopee web scraping service, NodusData">
+  <meta name="robots" content="index, follow, noarchive">
+  <meta name="google-site-verification" content="googlece1814b77c7d9379">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://nodusdatahq.com/">
+
+  <!-- OpenGraph Meta Tags for B2B Sharing -->
+  <meta property="og:title" content="Shopee PDP Data API & Extraction Service | NodusData">
+  <meta property="og:description" content="Access complete, untruncated Shopee PDP raw JSON response payloads via high-speed REST APIs or automated cloud feeds across 12 global markets.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nodusdatahq.com/">
+  <meta property="og:site_name" content="NodusData Enterprise">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shopee PDP Data API & Extraction Service | NodusData">
+  <meta name="twitter:description" content="High-speed REST APIs and direct data feeds for Shopee PDP raw JSON responses, live prices, stock, & variation data across 12 global markets.">
+
+  <!-- Comprehensive JSON-LD Structured Data Suite -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "NodusData",
+      "url": "https://nodusdatahq.com/",
+      "description": "Enterprise Shopee PDP product data extraction service & REST API platform."
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "NodusData Enterprise",
+      "url": "https://nodusdatahq.com/",
+      "logo": "https://nodusdatahq.com/favicon.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "contact@nodusdatahq.com",
+        "contactType": "customer service",
+        "availableLanguage": ["English"]
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Shopee PDP Product Data Extraction API & Data Feeds",
+      "provider": {
+        "@type": "Organization",
+        "name": "NodusData Enterprise"
+      },
+      "serviceType": "E-Commerce Market Intelligence & Data Extraction API",
+      "areaServed": ["Brazil", "Mexico", "Argentina", "Singapore", "Malaysia", "Thailand", "Philippines", "Vietnam", "Indonesia", "Cambodia", "Laos", "Taiwan"],
+      "keywords": [
+        "Shopee product API", "Shopee product data", "Shopee pricing API", "Shopee inventory API", "Shopee marketplace data",
+        "Bright Data alternative Shopee", "Oxylabs Shopee API alternative", "Apify Shopee actor alternative", "ScraperAPI competitor", "top 5 e-commerce scrapers",
+        "Shopee price monitoring tool", "Shopee MAP compliance tracker", "Shopee brand monitoring scraper",
+        "Shopee PDP get_pc API", "Shopee raw JSON payload", "Shopee Python API SDK", "Shopee anti-bot proxy bypass"
+      ],
+      "description": "High-throughput dedicated REST API key provisioning and direct data feed delivery for Shopee product detail pages (PDP)."
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "NodusData Shopee API Platform",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "All",
+      "keywords": "Shopee product API, Shopee pricing API, Shopee inventory API, Bright Data alternative, Oxylabs alternative, Apify alternative, top 5 scrapers, Shopee Python SDK, Shopee get_pc JSON",
+      "offers": {
+        "@type": "Offer",
+        "price": "5.00",
+        "priceCurrency": "USD",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "5.00",
+          "priceCurrency": "USD",
+          "unitText": "1,000 successful requests"
+        },
+        "availability": "https://schema.org/InStock"
+      },
+      "description": "Dedicated Shopee product data extraction API providing single-market REST keys and automated feeds at a fixed rate of $5 per 1,000 successful requests per selected market."
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I get API keys for real-time Shopee PDP product data?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can request API access directly through our inquiry form or contact team. We provision production and sandbox API credentials instantly with full REST API documentation and code samples."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I receive direct automated data feeds without writing code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! We deliver automated, scheduled raw datasets (in JSON, CSV, or Parquet format) directly to your AWS S3 bucket, Google Cloud Storage, or automated webhook endpoints for zero-code integration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What data fields are included in the Full PDP get_pc Raw JSON payload?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our payloads include 100% complete, untruncated Shopee response attributes: item_id, shop_id, models variation arrays, tier_variations with option images, product_price single values & discounts, product_shipping SLA, seller metadata, and active vouchers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which international Shopee markets are covered?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We cover all 12 global active Shopee markets: Brazil (BR), Mexico (MX), Argentina (AR), Singapore (SG), Malaysia (MY), Thailand (TH), Philippines (PH), Vietnam (VN), Indonesia (ID), Cambodia (KH), Laos (LA), and Taiwan (TW)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the $5 / 1k requests pricing cover all countries in a single multi-market API?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We provide dedicated APIs for a single Shopee market based on client requirements. Choose your region — we will provide a dedicated API for that market. Pricing of $5 per 1,000 requests applies per individual market API."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the data accuracy guarantee and uptime SLA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We guarantee 99.8%+ field-level data accuracy through continuous validation pipelines, backed by a 99.5% uptime SLA and 24/7 automated monitoring."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why choose NodusData over general web scraping APIs like Bright Data or Oxylabs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "General scraping APIs charge high monthly retainers ($300–$500+/mo), bill for failed attempts, and return generic HTML. NodusData is 100% specialized in Shopee PDP data, offering a fixed rate of $5 per 1k successful requests with complete get_pc raw JSON payloads."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does NodusData handle Shopee anti-bot protections and IP blocks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "NodusData operates a fully managed infrastructure with automated residential proxy rotation, CAPTCHA solving, and dynamic JS rendering, delivering clean HTTP 200 OK JSON responses via REST API endpoints."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://nodusdatahq.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "API & Data Feeds",
+          "item": "https://nodusdatahq.com/#delivery-modes"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Pricing & SLA",
+          "item": "https://nodusdatahq.com/#sla-pricing"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Why NodusData",
+          "item": "https://nodusdatahq.com/#comparison"
+        }
+      ]
+    }
+  ]
+  </script>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Data Sample & Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <script src="data-sample.js"></script>
+</head>
+<body>
+  <!-- Background Glow & Grid Overlay -->
+  <div class="bg-grid"></div>
+  <div class="bg-radial-glow"></div>
+  <div class="bg-radial-glow-2"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header">
+    <!-- Top Announcement Bar: Dedicated Market API Announcement -->
+    <div class="top-announcement-bar">
+      <div class="announcement-container">
+        <span class="announcement-badge"><i class="fa-solid fa-earth-americas"></i> DEDICATED MARKET APIs</span>
+        <span class="announcement-text"><strong>Choose your region — we will provide a dedicated API for that market</strong> at a fixed rate of $5 / 1k requests!</span>
+        <a href="#contact" class="announcement-link">Get API Access & Data <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <div class="header-container">
+      <a href="#" class="logo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-circle-nodes"></i>
+        </div>
+        <span class="logo-text">Nodus<span class="logo-accent">Data</span></span>
+      </a>
+
+      <nav class="main-nav" id="main-nav">
+        <a href="#delivery-modes" class="nav-link">API & Data Feeds</a>
+        <a href="#sla-pricing" class="nav-link">Pricing & SLA</a>
+        <a href="#comparison" class="nav-link">Why NodusData</a>
+        <a href="#markets" class="nav-link">Markets</a>
+        <a href="#offerings" class="nav-link">Data Coverage</a>
+        <a href="#sample-dataset" class="nav-link">Sample Dataset</a>
+        <a href="#use-cases" class="nav-link">Use Cases</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#about" class="nav-link">About</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-primary btn-nav-contact" id="btn-open-modal">Contact us</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-container">
+        <div class="hero-grid">
+          <!-- Left Column: Copy & Actions -->
+          <div class="hero-left">
+            <div class="hero-badge-pill">
+              <i class="fa-solid fa-key badge-shield-icon"></i>
+              <span class="badge-text-main">Dedicated Market APIs ($5 / 1k)</span>
+              <span class="badge-dot-sep">•</span>
+              <span class="badge-text-sub">Choose Your Region</span>
+            </div>
+
+            <h1 class="hero-title">
+              Real-time Shopee product data across all <span class="highlight-num">12</span> global markets
+            </h1>
+
+            <p class="hero-subheadline">
+              <strong>Choose your region — we will provide a dedicated API for that market.</strong> Access high-speed <strong>Shopee product API</strong> endpoints and automated direct <strong>Shopee product data</strong> feeds for live <strong>Shopee marketplace data</strong> across Brazil, Mexico, Argentina, Singapore, Malaysia, Thailand, Philippines, Vietnam, Indonesia, Cambodia, Laos, and Taiwan.
+            </p>
+
+            <div class="hero-cta-group">
+              <button class="btn btn-primary btn-hero-primary" id="btn-open-modal-hero">
+                <span>Get API Key / Contact us</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+              <a href="#sample-dataset" class="btn btn-secondary btn-hero-secondary" id="btn-hero-sample">
+                <i class="fa-solid fa-file-lines"></i>
+                <span>View sample dataset</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive 3D Globe with Market Pins -->
+          <div class="hero-right">
+            <div class="globe-viewport">
+              <div class="globe-glow-backdrop"></div>
+              <img src="assets/hero_globe.png" alt="Shopee Global Data Network 3D Earth Globe" class="globe-graphic-img">
+              
+              <!-- SVG Connecting Arcs -->
+              <svg class="globe-lines-svg" viewBox="0 0 600 600" preserveAspectRatio="none">
+                <!-- Singapore Arc -->
+                <path d="M220 280 Q 260 250, 310 270" class="globe-arc-line" />
+                <circle cx="310" cy="270" r="4" class="node-dot pulse-1" />
+                
+                <!-- Malaysia Arc -->
+                <path d="M230 350 Q 270 330, 320 310" class="globe-arc-line" />
+                <circle cx="320" cy="310" r="4" class="node-dot pulse-2" />
+
+                <!-- Mexico Arc -->
+                <path d="M180 160 Q 240 180, 280 220" class="globe-arc-line" />
+                <circle cx="280" cy="220" r="4" class="node-dot pulse-3" />
+
+                <!-- Argentina Arc -->
+                <path d="M200 460 Q 260 420, 300 370" class="globe-arc-line" />
+                <circle cx="300" cy="370" r="4" class="node-dot pulse-4" />
+                
+                <!-- Taiwan Arc -->
+                <path d="M470 120 Q 420 150, 390 190" class="globe-arc-line" />
+                <circle cx="390" cy="190" r="4" class="node-dot pulse-5" />
+                
+                <!-- Thailand Arc -->
+                <path d="M480 180 Q 430 200, 350 230" class="globe-arc-line" />
+                <circle cx="350" cy="230" r="4" class="node-dot pulse-6" />
+
+                <!-- Cambodia Arc -->
+                <path d="M485 220 Q 430 230, 360 240" class="globe-arc-line" />
+                <circle cx="360" cy="240" r="4" class="node-dot pulse-7" />
+
+                <!-- Vietnam Arc -->
+                <path d="M490 270 Q 430 250, 370 255" class="globe-arc-line" />
+                <circle cx="370" cy="255" r="4" class="node-dot pulse-8" />
+
+                <!-- Laos Arc -->
+                <path d="M485 320 Q 430 290, 365 265" class="globe-arc-line" />
+                <circle cx="365" cy="265" r="4" class="node-dot pulse-9" />
+
+                <!-- Philippines Arc -->
+                <path d="M490 380 Q 450 330, 410 290" class="globe-arc-line" />
+                <circle cx="410" cy="290" r="4" class="node-dot pulse-10" />
+
+                <!-- Indonesia Arc -->
+                <path d="M480 430 Q 410 390, 360 340" class="globe-arc-line" />
+                <circle cx="360" cy="340" r="4" class="node-dot pulse-11" />
+
+                <!-- Brazil Arc -->
+                <path d="M380 490 Q 300 450, 240 390" class="globe-arc-line" />
+                <circle cx="240" cy="390" r="4" class="node-dot pulse-12" />
+              </svg>
+
+              <!-- Floating Market Country Cards (All 12 Global Markets) -->
+              <div class="market-pin-card pin-singapore">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/sg.svg" alt="Singapore Flag" class="pin-flag">
+                <span>Singapore</span>
+              </div>
+
+              <div class="market-pin-card pin-malaysia">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/my.svg" alt="Malaysia Flag" class="pin-flag">
+                <span>Malaysia</span>
+              </div>
+
+              <div class="market-pin-card pin-mexico">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/mx.svg" alt="Mexico Flag" class="pin-flag">
+                <span>Mexico</span>
+              </div>
+
+              <div class="market-pin-card pin-argentina">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ar.svg" alt="Argentina Flag" class="pin-flag">
+                <span>Argentina</span>
+              </div>
+
+              <div class="market-pin-card pin-taiwan">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/tw.svg" alt="Taiwan Flag" class="pin-flag">
+                <span>Taiwan</span>
+              </div>
+
+              <div class="market-pin-card pin-thailand">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/th.svg" alt="Thailand Flag" class="pin-flag">
+                <span>Thailand</span>
+              </div>
+
+              <div class="market-pin-card pin-cambodia">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/kh.svg" alt="Cambodia Flag" class="pin-flag">
+                <span>Cambodia</span>
+              </div>
+
+              <div class="market-pin-card pin-vietnam">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/fla
