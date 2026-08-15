@@ -2,109 +2,138 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://nodusdatahq.com/</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+  <!-- High-Intent B2B Solution Landing Pages -->
+  <url>
+    <loc>https://nodusdatahq.com/shopee-map-compliance-monitoring.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://nodusdatahq.com/shopee-price-intelligence-repricing-api.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://nodusdatahq.com/shopee-data-for-scraping-vendors-daas.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://nodusdatahq.com/shopee-market-intelligence-hedge-funds.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- 12 Regional Market Pages -->
   <url>
     <loc>https://nodusdatahq.com/shopee-brazil-api.html</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://nodusdatahq.com/shopee-mexico-api.html</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://nodusdatahq.com/shopee-argentina-api.html</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://nodusdatahq.com/shopee-singapore-api.html</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://nodusdatahq.com/shopee-malaysia-api.html</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://nodusdatahq.com/shopee-thailand-api.html</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://nodusdatahq.com/shopee-philippines-api.html</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://nodusdatahq.com/shopee-vietnam-api.html</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://nodusdatahq.com/shopee-indonesia-api.html</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://nodusdatahq.com/shopee-cambodia-api.html</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://nodusdatahq.com/shopee-laos-api.html</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://nodusdatahq.com/shopee-taiwan-api.html</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
+
+  <!-- Core Feature Anchors -->
+  <url>
+    <loc>https://nodusdatahq.com/#solutions</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
   <url>
     <loc>https://nodusdatahq.com/#delivery-modes</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://nodusdatahq.com/#sla-pricing</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://nodusdatahq.com/#comparison</loc>
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://nodusdatahq.com/#sample-dataset</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://nodusdatahq.com/#contact</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
