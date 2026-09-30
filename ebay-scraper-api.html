@@ -1,30 +1,27 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>eBay Scraper API & Real-Time Market Data Feed | NodusData HQ</title>
-  <meta name="description" content="High-speed eBay Scraper API & direct cloud data feeds. Extract real-time eBay product listings, Auction vs. Buy-It-Now pricing, seller feedback scores, & historical sold prices across eBay US, UK, DE, & AU.">
-  <meta name="keywords" content="eBay Scraper API, eBay product data API, eBay price tracker API, eBay sold listings scraper, Bright Data eBay alternative, Oxylabs eBay API alternative, NodusData HQ">
-  <meta name="robots" content="index, follow, noarchive">
-
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://nodusdatahq.com/ebay-scraper-api.html">
-
-  <!-- OpenGraph Meta Tags -->
-  <meta property="og:title" content="eBay Scraper API & Real-Time Market Data Feed | NodusData HQ">
-  <meta property="og:description" content="Extract real-time eBay product listings, Auction vs. Buy-It-Now pricing, seller feedback scores, and historical sold prices across eBay US, UK, DE, and AU.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://nodusdatahq.com/ebay-scraper-api.html">
-
-  <!-- Favicons & Google Search Brand Icons -->
-  <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="shortcut icon" href="favicon.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-
-  <!-- JSON-LD Structured Data Suite -->
-  <script type="application/ld+json">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>eBay Scraper API &amp; Auction Data Feed | NodusData</title>
+<meta content="High-speed eBay Scraper API. Extract live auction bids, buy-it-now pricing, item specifics, and seller feedback across all global eBay sites." name="description"/>
+<meta content="eBay Scraper API, eBay product data API, eBay price tracker API, eBay sold listings scraper, Bright Data eBay alternative, Oxylabs eBay API alternative, NodusData HQ" name="keywords"/>
+<meta content="index, follow, noarchive" name="robots"/>
+<!-- Canonical URL -->
+<link href="https://nodusdatahq.com/ebay-scraper-api.html" rel="canonical"/>
+<!-- OpenGraph Meta Tags -->
+<meta content="eBay Scraper API &amp; Auction Data Feed | NodusData" property="og:title"/>
+<meta content="High-speed eBay Scraper API. Extract live auction bids, buy-it-now pricing, item specifics, and seller feedback across all global eBay sites." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://nodusdatahq.com/ebay-scraper-api.html" property="og:url"/>
+<!-- Favicons & Google Search Brand Icons -->
+<link href="favicon.png" rel="icon" sizes="512x512" type="image/png"/>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="favicon.png" rel="shortcut icon"/>
+<link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<!-- JSON-LD Structured Data Suite -->
+<script type="application/ld+json">
   [
     {
       "@context": "https://schema.org",
@@ -57,209 +54,253 @@
     }
   ]
   </script>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-  <div class="bg-grid"></div>
-  <div class="bg-radial-glow"></div>
-
-  <header class="site-header" id="header">
-    <div class="top-announcement-bar">
-      <div class="announcement-container">
-        <span class="announcement-badge"><i class="fa-brands fa-ebay"></i> EBAY DATA PIPELINE</span>
-        <span class="announcement-text"><strong>High-Speed eBay Auction & Buy-It-Now API</strong> at 99.99% Uptime!</span>
-        <a href="#contact" class="announcement-link">Get API Access <i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-    </div>
-
-    <div class="header-container">
-      <a href="index.html" class="logo">
-        <div class="logo-icon"><i class="fa-solid fa-circle-nodes"></i></div>
-        <span class="logo-text">Nodus<span class="logo-accent">Data HQ</span></span>
-      </a>
-      <nav class="main-nav" id="main-nav">
-        <a href="index.html" class="nav-link"><i class="fa-solid fa-arrow-left"></i> Home</a>
-        <a href="#features" class="nav-link">Features</a>
-        <a href="#coverage" class="nav-link">Coverage</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </nav>
-      <div class="header-actions">
-        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu"><i class="fa-solid fa-bars"></i></button>
-        <a href="#contact" class="btn btn-primary btn-nav-contact">Request eBay API Key</a>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <!-- HERO SECTION -->
-    <section class="hero-section" id="hero">
-      <div class="hero-container">
-        <div class="hero-left">
-          <div class="hero-badge-pill">
-            <i class="fa-brands fa-ebay badge-shield-icon"></i>
-            <span class="badge-text-main">Enterprise eBay Scraper API</span>
-            <span class="badge-dot-sep">•</span>
-            <span class="badge-text-sub">99.99% Guaranteed Uptime</span>
-          </div>
-
-          <h1 class="hero-title">
-            Real-Time eBay Auction & Secondary Market Scraping API
+<div class="bg-grid"></div>
+<div class="bg-radial-glow"></div>
+<header class="site-header" id="header">
+<div class="top-announcement-bar">
+<div class="announcement-container">
+<span class="announcement-badge"><i class="fa-brands fa-ebay"></i> EBAY DATA PIPELINE</span>
+<span class="announcement-text"><strong>High-Speed eBay Auction &amp; Buy-It-Now API</strong> at 99.99% Uptime!</span>
+<a class="announcement-link" href="#contact">Get API Access <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+</div>
+<div class="header-container">
+<a class="logo" href="index.html">
+<div class="logo-icon"><i class="fa-solid fa-circle-nodes"></i></div>
+<span class="logo-text">Nodus<span class="logo-accent">Data HQ</span></span>
+</a>
+<nav class="main-nav" id="main-nav">
+<a class="nav-link" href="index.html"><i class="fa-solid fa-arrow-left"></i> Home</a>
+<a class="nav-link" href="#features">Features</a>
+<a class="nav-link" href="#coverage">Coverage</a>
+<a class="nav-link" href="#contact">Contact</a>
+</nav>
+<div class="header-actions">
+<button aria-label="Toggle navigation menu" class="mobile-toggle" id="mobile-toggle"><i class="fa-solid fa-bars"></i></button>
+<a class="btn btn-primary btn-nav-contact" href="#contact">Request eBay API Key</a>
+</div>
+</div>
+</header>
+<main>
+<!-- HERO SECTION -->
+<section class="hero-section" id="hero">
+<div class="hero-container">
+<div class="hero-left">
+<div class="hero-badge-pill">
+<i class="fa-brands fa-ebay badge-shield-icon"></i>
+<span class="badge-text-main">Enterprise eBay Scraper API</span>
+<span class="badge-dot-sep">•</span>
+<span class="badge-text-sub">99.99% Guaranteed Uptime</span>
+</div>
+<h1 class="hero-title">
+            Real-Time eBay Auction &amp; Secondary Market Scraping API
           </h1>
-
-          <p class="hero-subheadline">
-            Extract 99.8%+ accurate eBay product data, live Auction vs. Buy-It-Now price tiers, seller feedback percentages, historical sold item prices, and item condition ratings across eBay US, UK, DE, & AU.
+<p class="hero-subheadline">
+            Extract 99.8%+ accurate eBay product data, live Auction vs. Buy-It-Now price tiers, seller feedback percentages, historical sold item prices, and item condition ratings across eBay US, UK, DE, &amp; AU.
           </p>
-
-          <div class="hero-cta-group">
-            <a href="#contact" class="btn btn-lg btn-primary btn-glow" id="btn-open-modal-hero">
-              <i class="fa-solid fa-key"></i>
-              <span>Get eBay API Credentials</span>
-            </a>
-            <a href="#features" class="btn btn-lg btn-secondary">
-              <i class="fa-solid fa-cubes"></i>
-              <span>View Data Capabilities</span>
-            </a>
-          </div>
-        </div>
-
-        <div class="hero-right text-center">
-          <div class="glass-card p-4">
-            <div class="metric-icon-wrapper mb-3" style="margin:0 auto 1rem;">
-              <i class="fa-brands fa-ebay text-accent" style="font-size:2.5rem;"></i>
-            </div>
-            <h3>Historical Sold Data Index</h3>
-            <p class="text-secondary">Track real-time secondary market valuation and historic sold price trends effortlessly.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURES -->
-    <section class="section" id="features">
-      <div class="section-container">
-        <div class="section-header text-center">
-          <div class="section-tag">KEY CAPABILITIES</div>
-          <h2 class="section-title">Why Resellers & Data Platforms Choose Our eBay API</h2>
-          <p class="section-subtitle">Secondary market price indexing and seller reputation feeds built for high 99.99% uptime.</p>
-        </div>
-
-        <div class="why-us-grid">
-          <div class="why-us-card glass-card">
-            <div class="why-icon"><i class="fa-solid fa-gavel"></i></div>
-            <h3>Auction vs. Buy-It-Now</h3>
-            <p>Track current bid counts, reserve price status, auction end timestamps, and instant Buy-It-Now pricing.</p>
-          </div>
-
-          <div class="why-us-card glass-card">
-            <div class="why-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
-            <h3>Historical Sold Prices</h3>
-            <p>Extract verified completed and sold listing price benchmarks for accurate secondary market valuations.</p>
-          </div>
-
-          <div class="why-us-card glass-card">
-            <div class="why-icon"><i class="fa-solid fa-user-check"></i></div>
-            <h3>Seller Feedback & Metrics</h3>
-            <p>Extract Top Rated Plus seller status, positive feedback percentages, total sold counts, and store locations.</p>
-          </div>
-
-          <div class="why-us-card glass-card">
-            <div class="why-icon"><i class="fa-solid fa-diagram-project"></i></div>
-            <h3>Direct Cloud Streaming</h3>
-            <p>Deliver untruncated JSON, CSV, or Parquet datasets directly to your AWS S3 bucket, Google Cloud Storage, or Snowflake warehouse.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section class="section contact-section" id="contact">
-      <div class="section-container">
-        <div class="contact-card glass-card">
-          <div class="contact-grid">
-            <div class="contact-info">
-              <div class="section-tag">EBAY API DESK</div>
-              <h2 class="contact-title">Get Production eBay API Keys</h2>
-              <p class="contact-text">
+<div class="hero-cta-group">
+<a class="btn btn-lg btn-primary btn-glow" href="#contact" id="btn-open-modal-hero">
+<i class="fa-solid fa-key"></i>
+<span>Get eBay API Credentials</span>
+</a>
+<a class="btn btn-lg btn-secondary" href="#features">
+<i class="fa-solid fa-cubes"></i>
+<span>View Data Capabilities</span>
+</a>
+</div>
+</div>
+<div class="hero-right text-center">
+<div class="glass-card p-4">
+<div class="metric-icon-wrapper mb-3" style="margin:0 auto 1rem;">
+<i class="fa-brands fa-ebay text-accent" style="font-size:2.5rem;"></i>
+</div>
+<h3>Historical Sold Data Index</h3>
+<p class="text-secondary">Track real-time secondary market valuation and historic sold price trends effortlessly.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- FEATURES -->
+<section class="section" id="features">
+<div class="section-container">
+<div class="section-header text-center">
+<div class="section-tag">KEY CAPABILITIES</div>
+<h2 class="section-title">Why Resellers &amp; Data Platforms Choose Our eBay API</h2>
+<p class="section-subtitle">Secondary market price indexing and seller reputation feeds built for high 99.99% uptime.</p>
+</div>
+<div class="why-us-grid">
+<div class="why-us-card glass-card">
+<div class="why-icon"><i class="fa-solid fa-gavel"></i></div>
+<h3>Auction vs. Buy-It-Now</h3>
+<p>Track current bid counts, reserve price status, auction end timestamps, and instant Buy-It-Now pricing.</p>
+</div>
+<div class="why-us-card glass-card">
+<div class="why-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+<h3>Historical Sold Prices</h3>
+<p>Extract verified completed and sold listing price benchmarks for accurate secondary market valuations.</p>
+</div>
+<div class="why-us-card glass-card">
+<div class="why-icon"><i class="fa-solid fa-user-check"></i></div>
+<h3>Seller Feedback &amp; Metrics</h3>
+<p>Extract Top Rated Plus seller status, positive feedback percentages, total sold counts, and store locations.</p>
+</div>
+<div class="why-us-card glass-card">
+<div class="why-icon"><i class="fa-solid fa-diagram-project"></i></div>
+<h3>Direct Cloud Streaming</h3>
+<p>Deliver untruncated JSON, CSV, or Parquet datasets directly to your AWS S3 bucket, Google Cloud Storage, or Snowflake warehouse.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CONTACT SECTION -->
+<section class="section contact-section" id="contact">
+<div class="section-container">
+<div class="contact-card glass-card">
+<div class="contact-grid">
+<div class="contact-info">
+<div class="section-tag">EBAY API DESK</div>
+<h2 class="contact-title">Get Production eBay API Keys</h2>
+<p class="contact-text">
                 Discuss custom request volume tiers, sandbox credentials, or direct cloud pipeline integration for your eBay data needs.
               </p>
-              <div class="contact-email-wrapper">
-                <span class="email-label">Official Contact</span>
-                <div class="email-display-box">
-                  <i class="fa-regular fa-envelope"></i>
-                  <!--email_off--><span class="email-text">contact@nodusdatahq.com</span><!--/email_off-->
-                </div>
-              </div>
-            </div>
-            <div class="contact-action-col text-center">
-              <h3>Request eBay API Credentials</h3>
-              <p class="mb-4">Instant sandbox key provisioning & custom volume quotes.</p>
-              <button class="btn btn-lg btn-primary btn-glow btn-block" id="btn-open-modal">
-                <i class="fa-solid fa-paper-plane"></i>
-                <span>Open eBay API Inquiry Form</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- MODAL WINDOW -->
-  <div class="modal-backdrop" id="contact-modal">
-    <div class="modal-card glass-card">
-      <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
-      <div class="modal-header">
-        <h3 class="modal-title">eBay API Credentials Inquiry</h3>
-        <p class="modal-subtitle">Configure dedicated eBay REST API keys or S3 data feeds.</p>
-      </div>
-      <form class="modal-form" id="vendor-inquiry-form">
-        <div class="form-group">
-          <label for="modal-name" class="form-label">Company / Product Name</label>
-          <input type="text" id="modal-name" name="name" class="form-input" placeholder="e.g. MarketValue Analytics" required>
-        </div>
-        <div class="form-group">
-          <label for="modal-email" class="form-label">Business Email</label>
-          <input type="email" id="modal-email" name="email" class="form-input" placeholder="partner@company.com" required>
-        </div>
-        <div class="form-group">
-          <label for="modal-market" class="form-label">Target eBay Region</label>
-          <select id="modal-market" name="market" class="form-select" required>
-            <option value="" disabled selected>Select Primary Region</option>
-            <option value="eBay US">eBay United States (ebay.com)</option>
-            <option value="eBay UK & EU">eBay UK & Europe (ebay.co.uk, ebay.de)</option>
-            <option value="eBay Australia">eBay Australia (ebay.com.au)</option>
-            <option value="All eBay Regions">All eBay Regions</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="modal-message" class="form-label">Expected Request Volume & Delivery Format</label>
-          <textarea id="modal-message" name="message" class="form-textarea" rows="3" placeholder="Specify your monthly volume requirements and delivery method (REST API, S3, Webhook)..." required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary btn-block">
-          <i class="fa-solid fa-paper-plane"></i>
-          <span>Submit eBay API Request</span>
-        </button>
-      </form>
-    </div>
-  </div>
-
-  <div class="toast" id="toast">
-    <i class="fa-solid fa-circle-check text-accent"></i>
-    <span id="toast-message">Inquiry sent successfully!</span>
-  </div>
-
-  <footer class="site-footer">
-    <div class="footer-container text-center">
-      <p>© 2026 NodusData HQ. All rights reserved. Official Contact: <!--email_off-->contact@nodusdatahq.com<!--/email_off--></p>
-      <p class="mt-2 text-secondary"><a href="index.html" class="text-accent">Home</a> | <a href="amazon-scraper-api.html">Amazon API</a> | <a href="walmart-scraper-api.html">Walmart API</a> | <a href="tiktok-shop-api.html">TikTok Shop API</a></p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+<div class="contact-email-wrapper">
+<span class="email-label">Official Contact</span>
+<div class="email-display-box">
+<i class="fa-regular fa-envelope"></i>
+<!--email_off--><span class="email-text">contact@nodusdatahq.com</span><!--/email_off-->
+</div>
+</div>
+</div>
+<div class="contact-action-col text-center">
+<h3>Request eBay API Credentials</h3>
+<p class="mb-4">Instant sandbox key provisioning &amp; custom volume quotes.</p>
+<button class="btn btn-lg btn-primary btn-glow btn-block" id="btn-open-modal">
+<i class="fa-solid fa-paper-plane"></i>
+<span>Open eBay API Inquiry Form</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- MODAL WINDOW -->
+<div class="modal-backdrop" id="contact-modal">
+<div class="modal-card glass-card">
+<button aria-label="Close modal" class="modal-close" id="modal-close">×</button>
+<div class="modal-header">
+<h3 class="modal-title">eBay API Credentials Inquiry</h3>
+<p class="modal-subtitle">Configure dedicated eBay REST API keys or S3 data feeds.</p>
+</div>
+<form class="modal-form" id="vendor-inquiry-form">
+<div class="form-group">
+<label class="form-label" for="modal-name">Company / Product Name</label>
+<input class="form-input" id="modal-name" name="name" placeholder="e.g. MarketValue Analytics" required="" type="text"/>
+</div>
+<div class="form-group">
+<label class="form-label" for="modal-email">Business Email</label>
+<input class="form-input" id="modal-email" name="email" placeholder="partner@company.com" required="" type="email"/>
+</div>
+<div class="form-group">
+<label class="form-label" for="modal-market">Target eBay Region</label>
+<select class="form-select" id="modal-market" name="market" required="">
+<option disabled="" selected="" value="">Select Primary Region</option>
+<option value="eBay US">eBay United States (ebay.com)</option>
+<option value="eBay UK &amp; EU">eBay UK &amp; Europe (ebay.co.uk, ebay.de)</option>
+<option value="eBay Australia">eBay Australia (ebay.com.au)</option>
+<option value="All eBay Regions">All eBay Regions</option>
+</select>
+</div>
+<div class="form-group">
+<label class="form-label" for="modal-message">Expected Request Volume &amp; Delivery Format</label>
+<textarea class="form-textarea" id="modal-message" name="message" placeholder="Specify your monthly volume requirements and delivery method (REST API, S3, Webhook)..." required="" rows="3"></textarea>
+</div>
+<button class="btn btn-primary btn-block" type="submit">
+<i class="fa-solid fa-paper-plane"></i>
+<span>Submit eBay API Request</span>
+</button>
+</form>
+</div>
+</div>
+<div class="toast" id="toast">
+<i class="fa-solid fa-circle-check text-accent"></i>
+<span id="toast-message">Inquiry sent successfully!</span>
+</div>
+<footer class="site-footer">
+<div class="footer-container">
+<div class="footer-top">
+<div class="footer-brand">
+<a class="logo" href="index.html">
+<div class="logo-icon">
+<i class="fa-solid fa-circle-nodes"></i>
+</div>
+<span class="logo-text">Nodus<span class="logo-accent">Data</span></span>
+</a>
+<p class="footer-tagline">Enterprise-grade live product intelligence across global e-commerce marketplaces with complete PDP get_pc raw JSON coverage.</p>
+</div>
+<div class="footer-links-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; width: 100%;">
+<div class="footer-col">
+<h4 style="color: var(--text-primary); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem;">Enterprise Solutions</h4>
+<ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
+<li><a href="shopee-enterprise-brand-protection.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Brand Protection &amp; Counterfeits</a></li>
+<li><a href="shopee-map-compliance-monitoring.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">MAP Compliance Monitoring</a></li>
+<li><a href="shopee-price-intelligence-repricing-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Price Intelligence &amp; Repricing API</a></li>
+<li><a href="shopee-data-for-scraping-vendors-daas.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">White-Label Scraping DaaS</a></li>
+<li><a href="shopee-market-intelligence-hedge-funds.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Alternative Data for Hedge Funds</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4 style="color: var(--text-primary); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem;">Regional Shopee APIs</h4>
+<ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8; display: grid; grid-template-columns: 1fr 1fr; gap: 0.3rem 1rem;">
+<li><a href="shopee-brazil-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Shopee Brazil</a></li>
+<li><a href="shopee-mexico-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Shopee Mexico</a></li>
+<li><a href="shopee-argentina-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Shopee Argentina</a></li>
+<li><a href="shopee-singapore-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Shopee Singapore</a></li>
+<li><a href="shopee-malaysia-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Shopee Malaysia</a></li>
+<li><a href="shopee-thailand-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Shopee Thailand</a></li>
+<li><a href="shopee-philippines-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Shopee Philippines</a></li>
+<li><a href="shopee-vietnam-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Shopee Vietnam</a></li>
+<li><a href="shopee-indonesia-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Shopee Indonesia</a></li>
+<li><a href="shopee-cambodia-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Shopee Cambodia</a></li>
+<li><a href="shopee-laos-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Shopee Laos</a></li>
+<li><a href="shopee-taiwan-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Shopee Taiwan</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4 style="color: var(--text-primary); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem;">Multi-Marketplace APIs</h4>
+<ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
+<li><a href="amazon-scraper-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Amazon Scraper API</a></li>
+<li><a href="walmart-scraper-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Walmart Scraper API</a></li>
+<li><a href="ebay-scraper-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">eBay Scraper API</a></li>
+<li><a href="tiktok-shop-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">TikTok Shop API</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4 style="color: var(--text-primary); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem;">Company &amp; Legal</h4>
+<ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
+<li><a href="index.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Home / Data Platform</a></li>
+<li><a href="index.html#contact" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Contact Enterprise Sales</a></li>
+<li><a class="modal-trigger" data-modal="privacy" href="#privacy-modal" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Privacy Policy</a></li>
+<li><a class="modal-trigger" data-modal="terms" href="#terms-modal" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Terms of Service &amp; SLA</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer-bottom" style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.08); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+<p class="copyright" style="color: var(--text-muted); font-size: 0.85rem; margin: 0;">© 2026 NodusData Enterprise. All rights reserved.</p>
+</div>
+<div class="footer-disclaimer text-center" style="margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid rgba(255,255,255,0.06); font-size: 0.8rem; color: var(--text-muted);">
+<p><i class="fa-solid fa-shield-halved text-accent"></i> <strong>Independent Data Provider Disclaimer:</strong> NodusData is an independent third-party market intelligence and web data extraction provider. All third-party platform names, trademarks, and logos belong to their respective owners and are referenced strictly for identification and formatting capabilities.</p>
+</div>
+</div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>

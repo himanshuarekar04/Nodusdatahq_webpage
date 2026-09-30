@@ -160,7 +160,7 @@ function showToast(message) {
 
 /* Modal Windows Setup */
 function initModals() {
-  const openModalBtns = document.querySelectorAll('#btn-open-modal, #btn-open-modal-hero, .btn-nav-contact');
+  const openModalBtns = document.querySelectorAll('#btn-open-modal, #btn-open-modal-hero, #btn-open-modal-contact-section, .btn-nav-contact');
   const contactModal = document.getElementById('contact-modal');
   const closeModalBtn = document.getElementById('modal-close');
 
@@ -268,10 +268,13 @@ function initFormSubmit() {
 
 /* Hero Data Stream Ticker Animation */
 function initHeroDataTicker() {
-  const rows = document.querySelectorAll('.stream-row');
+  // Target live stream table rows (.stream-table tbody tr)
+  const rows = document.querySelectorAll('.stream-table tbody tr');
   if (rows.length === 0) return;
 
   let currentIndex = 0;
+  // Highlight the first row immediately
+  rows[0].classList.add('active');
   setInterval(() => {
     rows.forEach(r => r.classList.remove('active'));
     currentIndex = (currentIndex + 1) % rows.length;

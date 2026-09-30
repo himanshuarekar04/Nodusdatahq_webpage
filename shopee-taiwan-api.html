@@ -1,110 +1,403 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shopee Taiwan Product Data API & Scraper | NodusData (shopee.tw)</title>
-  <meta name="description" content="NodusData provides high-speed dedicated REST API keys & direct data feeds for Shopee Taiwan (shopee.tw). Extract get_pc raw JSON, live prices, stock, & variation data.">
-  <meta name="keywords" content="Shopee Taiwan product API, Shopee Taiwan product data, Shopee Taiwan pricing API, shopee.tw data feed, Shopee Taiwan scraper API, Bright Data alternative Shopee Taiwan, NodusData">
-  <meta name="robots" content="index, follow, noarchive">
-  <link rel="canonical" href="https://nodusdatahq.com/shopee-taiwan-api.html">
-  <meta property="og:title" content="Shopee Taiwan Product Data API & Scraper | NodusData">
-  <meta property="og:description" content="Access complete, untruncated Shopee Taiwan (shopee.tw) PDP raw JSON payloads via high-speed REST APIs.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://nodusdatahq.com/shopee-taiwan-api.html">
-  <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="shortcut icon" href="favicon.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shopee Taiwan Data API &amp; Scraper | NodusData HQ</title>
+<meta content="Real-time Shopee Taiwan (shopee.tw) scraper API. Extract TWD prices, product specs, stock levels, and seller ratings with zero anti-bot friction." name="description"/>
+<meta content="Shopee Taiwan product API, Shopee Taiwan product data, Shopee Taiwan pricing API, shopee.tw scraper API, Shopee Taiwan raw JSON, NodusData Shopee Taiwan" name="keywords"/>
+<meta content="index, follow, noarchive" name="robots"/>
+<link href="https://nodusdatahq.com/shopee-taiwan-api.html" rel="canonical"/>
+<meta content="Shopee Taiwan Data API &amp; Scraper | NodusData HQ" property="og:title"/>
+<meta content="Real-time Shopee Taiwan (shopee.tw) scraper API. Extract TWD prices, product specs, stock levels, and seller ratings with zero anti-bot friction." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://nodusdatahq.com/shopee-taiwan-api.html" property="og:url"/>
+<script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Shopee Taiwan PDP Data Extraction API",
+      "provider": {
+        "@type": "Organization",
+        "name": "NodusData Enterprise",
+        "url": "https://nodusdatahq.com/"
+      },
+      "serviceType": "E-Commerce Market Data API",
+      "areaServed": "Taiwan",
+      "description": "Dedicated REST API for Shopee Taiwan (shopee.tw). Extracts live prices in TWD (NT$), stock levels, seller ratings, and raw PDP JSON.",
+      "offers": {
+        "@type": "Offer",
+        "price": "5.00",
+        "priceCurrency": "USD",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "5.00",
+          "priceCurrency": "USD",
+          "unitText": "1,000 successful requests"
+        }
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How does the Shopee Taiwan API bypass anti-bot security?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "NodusData operates a distributed residential proxy pool in Taiwan combined with automated TLS fingerprint spoofing to guarantee 99.9% uptime without IP blocks or CAPTCHAs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What product data fields are available for Shopee Taiwan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The API extracts item_id, shop_id, full title, product_price in TWD (NT$), price_before_discount, model variation arrays, stock levels, rating_star, historical_sold, and active shop vouchers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the cost structure for the Shopee Taiwan API?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fixed rate of USD 5 per 1,000 successful requests. Failed attempts are never billed."
+          }
+        }
+      ]
+    }
+  ]
+  </script>
+<link href="favicon.png" rel="icon" sizes="512x512" type="image/png"/>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="favicon.png" rel="shortcut icon"/>
+<link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-  <div class="bg-grid"></div>
-  <div class="bg-radial-glow"></div>
-  <header class="site-header" id="header">
-    <div class="top-announcement-bar">
-      <div class="announcement-container">
-        <span class="announcement-badge"><i class="fa-solid fa-earth-asia"></i> DEDICATED TAIWAN MARKET API</span>
-        <span class="announcement-text"><strong>Choose your region — we will provide a dedicated API for that market</strong> at $5 / 1k requests!</span>
-        <a href="#contact" class="announcement-link">Get API Access <i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-    </div>
-    <div class="header-container">
-      <a href="index.html" class="logo">
-        <div class="logo-icon"><i class="fa-solid fa-circle-nodes"></i></div>
-        <span class="logo-text">Nodus<span class="logo-accent">Data</span></span>
-      </a>
-      <nav class="main-nav">
-        <a href="index.html" class="nav-link"><i class="fa-solid fa-arrow-left"></i> All Markets</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </nav>
-      <div class="header-actions">
-        <a href="#contact" class="btn btn-primary btn-nav-contact">Get Taiwan API Key</a>
-      </div>
-    </div>
-  </header>
-  <main>
-    <section class="hero-section" id="hero">
-      <div class="hero-container">
-        <div class="hero-left">
-          <div class="hero-badge-pill">
-            <i class="fa-solid fa-flag badge-shield-icon"></i>
-            <span class="badge-text-main">Shopee Taiwan (shopee.tw)</span>
-            <span class="badge-dot-sep">•</span>
-            <span class="badge-text-sub">Dedicated API</span>
-          </div>
-          <h1 class="hero-title">Shopee Taiwan Product Data API & Live Feed <span class="highlight-num">(TW)</span></h1>
-          <p class="hero-subheadline">
-            <strong>Choose your region — we will provide a dedicated API for that market.</strong> Access high-speed <strong>Shopee Taiwan product API</strong> endpoints and automated direct <strong>Shopee Taiwan product data</strong> feeds for <code>shopee.tw</code> PDP raw JSON response payloads at $5 / 1,000 requests.
+<div class="bg-grid"></div>
+<div class="bg-radial-glow"></div>
+<header class="site-header" id="header">
+<div class="top-announcement-bar">
+<div class="announcement-container">
+<span class="announcement-badge"><i class="fa-solid fa-earth-asia"></i> DEDICATED TW MARKET API</span>
+<span class="announcement-text"><strong>Shopee Taiwan (shopee.tw) dedicated API</strong> at fixed $5 / 1k successful requests!</span>
+<a class="announcement-link" href="#contact">Get Taiwan API Key <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+</div>
+<div class="header-container">
+<a class="logo" href="index.html">
+<div class="logo-icon"><i class="fa-solid fa-circle-nodes"></i></div>
+<span class="logo-text">Nodus<span class="logo-accent">Data</span></span>
+</a>
+<nav class="main-nav" id="main-nav">
+<a class="nav-link" href="index.html"><i class="fa-solid fa-arrow-left"></i> All Markets</a>
+<a class="nav-link" href="#features">Features</a>
+<a class="nav-link" href="#code-samples">Code Examples</a>
+<a class="nav-link" href="#data-fields">Data Fields</a>
+<a class="nav-link" href="#faq">FAQ</a>
+<a class="nav-link" href="#contact">Contact</a>
+</nav>
+<div class="header-actions">
+<button aria-label="Toggle navigation" class="mobile-toggle" id="mobile-toggle"><i class="fa-solid fa-bars"></i></button>
+<a class="btn btn-primary btn-nav-contact" href="#contact">Get Taiwan API Key</a>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="hero-section" id="hero">
+<div class="hero-container">
+<div class="hero-left">
+<div class="hero-badge-pill">
+<i class="fa-solid fa-flag badge-shield-icon"></i>
+<span class="badge-text-main">Shopee Taiwan (shopee.tw)</span>
+<span class="badge-dot-sep">•</span>
+<span class="badge-text-sub">East Asia Region</span>
+</div>
+<h1 class="hero-title">Shopee Taiwan Product Data API &amp; Live Scraper <span class="highlight-num">(TW)</span></h1>
+<p class="hero-subheadline">
+            Extract high-frequency live <strong>Shopee Taiwan product data</strong> from <code>shopee.tw</code>. Gain instant access to live prices in TWD (NT$), real-time stock levels, seller ratings, historical sales volume, and complete native <code>get_pc</code> raw JSON payloads at a fixed cost of <strong>$5 per 1,000 successful API calls</strong>.
           </p>
-          <div class="hero-cta-group">
-            <a href="#contact" class="btn btn-primary btn-hero-primary">
-              <span>Get Taiwan API Key ($5 / 1k)</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section contact-section" id="contact">
-      <div class="section-container">
-        <div class="contact-card glass-card">
-          <div class="contact-grid">
-            <div class="contact-info">
-              <div class="section-tag">TAIWAN DEDICATED API</div>
-              <h2 class="contact-title">Request Shopee Taiwan API Key</h2>
-              <p class="contact-text">Dedicated single-market REST API for <strong>Shopee Taiwan (shopee.tw)</strong>. Fixed rate of <strong>$5 per 1,000 successful requests</strong> ($0 charge for failed requests).</p>
-            </div>
-            <div class="contact-action-col">
-              <form class="modal-form" id="tw-form">
-                <div class="form-group">
-                  <label for="tw-name">Your Name</label>
-                  <input type="text" id="tw-name" placeholder="Name or Company" required>
-                </div>
-                <div class="form-group">
-                  <label for="tw-email">Your Work Email</label>
-                  <input type="email" id="tw-email" placeholder="email@company.com" required>
-                </div>
-                <div class="form-group">
-                  <label for="tw-market">Selected Market</label>
-                  <select id="tw-market">
-                    <option value="tw" selected>Taiwan (shopee.tw) — Dedicated API ($5/1k)</option>
-                  </select>
-                </div>
-                <button type="submit" class="btn btn-primary btn-block btn-glow">
-                  <i class="fa-solid fa-paper-plane"></i> Request Taiwan API Credentials
+<div class="hero-cta-group">
+<a class="btn btn-primary btn-hero-primary" href="#contact">
+<span>Get Taiwan API Key ($5 / 1k)</span>
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+<a class="btn btn-secondary btn-hero-secondary" href="index.html#sample-dataset">
+<i class="fa-solid fa-file-lines"></i>
+<span>View Sample Dataset</span>
+</a>
+</div>
+</div>
+<div class="hero-right text-center">
+<div class="glass-card" style="padding: 2rem;">
+<div style="display: flex; flex-direction: column; gap: 1.25rem;">
+<div class="metric-item" style="border:none; padding:0;">
+<div class="metric-icon-wrapper"><i class="fa-solid fa-bullseye"></i></div>
+<div class="metric-text-group"><div class="metric-number">99.9%</div><div class="metric-subtitle">Live Payload Accuracy</div></div>
+</div>
+<div class="metric-item" style="border:none; padding:0;">
+<div class="metric-icon-wrapper"><i class="fa-solid fa-bolt"></i></div>
+<div class="metric-text-group"><div class="metric-number">&lt; 350ms</div><div class="metric-subtitle">Average Latency (TW)</div></div>
+</div>
+<div class="metric-item" style="border:none; padding:0;">
+<div class="metric-icon-wrapper"><i class="fa-solid fa-coins"></i></div>
+<div class="metric-text-group"><div class="metric-number">$5 / 1,000</div><div class="metric-subtitle">Fixed Rate, Zero Hidden Fees</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Overview Section -->
+<section class="section" id="features">
+<div class="section-container">
+<div class="section-header text-center">
+<div class="section-tag">ENGINEERING &amp; CAPABILITIES</div>
+<h2 class="section-title">Built for Enterprise Data Extraction on Shopee Taiwan</h2>
+<p class="section-subtitle">Shopee Taiwan employs aggressive anti-bot protection including Akamai Bot Manager and custom JS challenges. NodusData resolves all protection automatically.</p>
+</div>
+<div class="why-us-grid">
+<div class="why-us-card glass-card">
+<div class="mode-badge-pill"><i class="fa-solid fa-shield-halved"></i> ANTI-BOT BYPASS</div>
+<h3 class="mt-3">Residential Proxy Rotation in Taiwan</h3>
+<p>Our localized proxy networks in Taiwan route all API requests through clean local IP pools, bypassing geographical blocking, CAPTCHAs, and rate limits transparently.</p>
+</div>
+<div class="why-us-card glass-card">
+<div class="mode-badge-pill cyan-pill"><i class="fa-solid fa-code"></i> RAW DATA</div>
+<h3 class="mt-3">Native get_pc PDP Raw JSON</h3>
+<p>Receive unparsed, untruncated Shopee Taiwan product metadata including multi-tier model variations, stock counts per variant, seller badge statuses, and discount vouchers.</p>
+</div>
+<div class="why-us-card glass-card">
+<div class="mode-badge-pill"><i class="fa-solid fa-chart-line"></i> PRICE INTELLIGENCE</div>
+<h3 class="mt-3">Live Price &amp; Currency Tracking</h3>
+<p>Track dynamic repricing in TWD (NT$), seller-level flash discounts, bundle deals, and regional shipping fee calculations across all categories on shopee.tw.</p>
+</div>
+<div class="why-us-card glass-card">
+<div class="mode-badge-pill cyan-pill"><i class="fa-solid fa-server"></i> HIGH THROUGHPUT</div>
+<h3 class="mt-3">Massive Parallel Scraping Pipelines</h3>
+<p>Scale your data collection to millions of daily requests with auto-scaling infrastructure, sub-second response times, and 99.9% uptime SLA commitments.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Code Examples Section -->
+<section class="section" id="code-samples">
+<div class="section-container">
+<div class="section-header text-center">
+<div class="section-tag">DEVELOPER INTEGRATION</div>
+<h2 class="section-title">Integrate Shopee Taiwan API in Minutes</h2>
+<p class="section-subtitle">Fetch real-time Shopee Taiwan product listings using standard HTTP GET requests in any backend language.</p>
+</div>
+<div class="glass-card" style="padding: 2rem; border-radius: 16px;">
+<h3 style="color: var(--text-primary); margin-bottom: 1rem;"><i class="fa-solid fa-terminal text-accent"></i> cURL Request Example</h3>
+<pre style="background: rgba(0,0,0,0.5); padding: 1.25rem; border-radius: 8px; overflow-x: auto; color: #a9b7c6; font-family: monospace; font-size: 0.9rem;">
+curl -X GET "https://api.nodusdatahq.com/v1/shopee/product?market=tw&amp;item_id=123456789&amp;shop_id=98765432"   -H "Authorization: Bearer YOUR_NODUSDATA_API_KEY"   -H "Accept: application/json"
+          </pre>
+<h3 style="color: var(--text-primary); margin-top: 1.5rem; margin-bottom: 1rem;"><i class="fa-brands fa-python text-accent"></i> Python Request Example</h3>
+<pre style="background: rgba(0,0,0,0.5); padding: 1.25rem; border-radius: 8px; overflow-x: auto; color: #a9b7c6; font-family: monospace; font-size: 0.9rem;">
+import requests
+
+api_url = "https://api.nodusdatahq.com/v1/shopee/product"
+headers = {"Authorization": "Bearer YOUR_NODUSDATA_API_KEY"}
+params = {
+    "market": "tw",
+    "domain": "shopee.tw",
+    "item_id": "123456789",
+    "shop_id": "98765432"
+}
+
+response = requests.get(api_url, headers=headers, params=params)
+data = response.json()
+print("Product Title:", data.get("name"))
+print("Price (TWD (NT$)):", data.get("price"))
+          </pre>
+</div>
+</div>
+</section>
+<!-- Data Fields Table Section -->
+<section class="section" id="data-fields">
+<div class="section-container">
+<div class="section-header text-center">
+<div class="section-tag">SCHEMA DEFINITION</div>
+<h2 class="section-title">Extracted Data Fields for Shopee Taiwan</h2>
+<p class="section-subtitle">Complete breakdown of extracted attributes returned in the JSON payload.</p>
+</div>
+<div class="glass-card" style="padding: 1.5rem; overflow-x: auto;">
+<table style="width: 100%; border-collapse: collapse; color: var(--text-secondary); font-size: 0.9rem;">
+<thead>
+<tr style="border-bottom: 1px solid rgba(255,255,255,0.1); text-align: left;">
+<th style="padding: 0.75rem 1rem; color: var(--text-primary);">Field Name</th>
+<th style="padding: 0.75rem 1rem; color: var(--text-primary);">Data Type</th>
+<th style="padding: 0.75rem 1rem; color: var(--text-primary);">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-bottom: 1px solid rgba(255,255,255,0.05);"><td style="padding: 0.75rem 1rem;"><code>item_id</code></td><td style="padding: 0.75rem 1rem;">Integer</td><td style="padding: 0.75rem 1rem;">Unique Shopee Taiwan product ID</td></tr>
+<tr style="border-bottom: 1px solid rgba(255,255,255,0.05);"><td style="padding: 0.75rem 1rem;"><code>shop_id</code></td><td style="padding: 0.75rem 1rem;">Integer</td><td style="padding: 0.75rem 1rem;">Unique seller merchant ID on shopee.tw</td></tr>
+<tr style="border-bottom: 1px solid rgba(255,255,255,0.05);"><td style="padding: 0.75rem 1rem;"><code>name</code></td><td style="padding: 0.75rem 1rem;">String</td><td style="padding: 0.75rem 1rem;">Full listing title in local language</td></tr>
+<tr style="border-bottom: 1px solid rgba(255,255,255,0.05);"><td style="padding: 0.75rem 1rem;"><code>price</code></td><td style="padding: 0.75rem 1rem;">Float / Integer</td><td style="padding: 0.75rem 1rem;">Current selling price in TWD (NT$)</td></tr>
+<tr style="border-bottom: 1px solid rgba(255,255,255,0.05);"><td style="padding: 0.75rem 1rem;"><code>price_before_discount</code></td><td style="padding: 0.75rem 1rem;">Float / Integer</td><td style="padding: 0.75rem 1rem;">Original list price prior to discount</td></tr>
+<tr style="border-bottom: 1px solid rgba(255,255,255,0.05);"><td style="padding: 0.75rem 1rem;"><code>stock</code></td><td style="padding: 0.75rem 1rem;">Integer</td><td style="padding: 0.75rem 1rem;">Live available quantity in warehouse</td></tr>
+<tr style="border-bottom: 1px solid rgba(255,255,255,0.05);"><td style="padding: 0.75rem 1rem;"><code>historical_sold</code></td><td style="padding: 0.75rem 1rem;">Integer</td><td style="padding: 0.75rem 1rem;">Total units sold historically on shopee.tw</td></tr>
+<tr style="border-bottom: 1px solid rgba(255,255,255,0.05);"><td style="padding: 0.75rem 1rem;"><code>rating_star</code></td><td style="padding: 0.75rem 1rem;">Float</td><td style="padding: 0.75rem 1rem;">Average star rating out of 5.0</td></tr>
+<tr style="border-bottom: 1px solid rgba(255,255,255,0.05);"><td style="padding: 0.75rem 1rem;"><code>models[]</code></td><td style="padding: 0.75rem 1rem;">Array[Object]</td><td style="padding: 0.75rem 1rem;">Variation breakdown (SKU ID, size/color, price, stock)</td></tr>
+<tr><td style="padding: 0.75rem 1rem;"><code>shop_vouchers[]</code></td><td style="padding: 0.75rem 1rem;">Array[Object]</td><td style="padding: 0.75rem 1rem;">Active seller discount vouchers and promo codes</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="section" id="faq">
+<div class="section-container">
+<div class="section-header text-center">
+<div class="section-tag">FREQUENTLY ASKED QUESTIONS</div>
+<h2 class="section-title">Shopee Taiwan API FAQs</h2>
+<p class="section-subtitle">Common technical and pricing questions answered.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 1rem; max-width: 800px; margin: 0 auto;">
+<div class="glass-card" style="padding: 1.5rem;">
+<h4 style="color: var(--text-primary); margin-bottom: 0.5rem;"><i class="fa-solid fa-circle-question text-accent"></i> How fast is the Shopee Taiwan API?</h4>
+<p style="color: var(--text-secondary); font-size: 0.95rem;">Average response times range between 250ms and 450ms. High-speed caching is available for unchanged product listings to accelerate batch lookups.</p>
+</div>
+<div class="glass-card" style="padding: 1.5rem;">
+<h4 style="color: var(--text-primary); margin-bottom: 0.5rem;"><i class="fa-solid fa-circle-question text-accent"></i> Am I charged if a request fails or times out?</h4>
+<p style="color: var(--text-secondary); font-size: 0.95rem;">No. NodusData operates on a strict success-only billing model. You are only billed $5 per 1,000 HTTP 200 responses containing valid product data payloads.</p>
+</div>
+<div class="glass-card" style="padding: 1.5rem;">
+<h4 style="color: var(--text-primary); margin-bottom: 0.5rem;"><i class="fa-solid fa-circle-question text-accent"></i> Can I request custom data delivery formats like S3 CSV or Webhooks?</h4>
+<p style="color: var(--text-secondary); font-size: 0.95rem;">Yes. In addition to standard REST API endpoint access, we support automated cloud pipeline exports directly to your AWS S3, Google Cloud Storage, or custom Webhook receivers.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact & Lead Form Section -->
+<section class="section contact-section" id="contact">
+<div class="section-container">
+<div class="contact-card glass-card">
+<div class="contact-grid">
+<div class="contact-info">
+<div class="section-tag">TW DEDICATED API ACCESS</div>
+<h2 class="contact-title">Request Shopee Taiwan API Key</h2>
+<p class="contact-text">Dedicated single-market REST API for <strong>Shopee Taiwan (shopee.tw)</strong>. Fixed rate of <strong>$5 per 1,000 successful requests</strong> ($0 charge for failed requests).</p>
+<div class="contact-email-wrapper">
+<span class="email-label">Official Email</span>
+<div class="email-display-box">
+<i class="fa-regular fa-envelope"></i>
+<!--email_off--><span class="email-text">contact@nodusdatahq.com</span><!--/email_off-->
+</div>
+</div>
+<div class="contact-sla-badge"><i class="fa-regular fa-clock"></i> Guaranteed response under 1 hour</div>
+</div>
+<div class="contact-action-col">
+<form class="modal-form" id="tw-form">
+<div class="form-group">
+<label for="tw-form-name">Your Name</label>
+<input id="tw-form-name" name="name" placeholder="Name or Company" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="tw-form-email">Your Work Email</label>
+<input id="tw-form-email" name="email" placeholder="email@company.com" required="" type="email"/>
+</div>
+<div class="form-group">
+<label for="tw-form-market">Selected Market</label>
+<select id="tw-form-market" name="market">
+<option selected="" value="Taiwan (shopee.tw)">Taiwan (shopee.tw) — Dedicated API ($5/1k)</option>
+</select>
+</div>
+<div class="form-group">
+<label for="tw-form-msg">Data Requirements</label>
+<textarea id="tw-form-msg" name="message" placeholder="Describe product categories, get_pc JSON needs, request frequency, or data volume..." required="" rows="3"></textarea>
+</div>
+<button class="btn btn-primary btn-block btn-glow" type="submit">
+<i class="fa-solid fa-paper-plane"></i> Request Taiwan API Credentials
                 </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer"><div class="footer-container text-center"><p>© 2026 NodusData Enterprise. Official Contact: contact@nodusdatahq.com</p></div></footer>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="footer-container">
+<div class="footer-top">
+<div class="footer-brand">
+<a class="logo" href="index.html">
+<div class="logo-icon"><i class="fa-solid fa-circle-nodes"></i></div>
+<span class="logo-text">Nodus<span class="logo-accent">Data</span></span>
+</a>
+<p class="footer-tagline">Enterprise-grade live product intelligence across global e-commerce marketplaces with complete PDP get_pc raw JSON coverage.</p>
+</div>
+<div class="footer-links-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; width: 100%;">
+<div class="footer-col">
+<h4 style="color: var(--text-primary); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem;">Enterprise Solutions</h4>
+<ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
+<li><a href="shopee-enterprise-brand-protection.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Brand Protection &amp; Counterfeits</a></li>
+<li><a href="shopee-map-compliance-monitoring.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">MAP Compliance Monitoring</a></li>
+<li><a href="shopee-price-intelligence-repricing-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Price Intelligence &amp; Repricing API</a></li>
+<li><a href="shopee-data-for-scraping-vendors-daas.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">White-Label Scraping DaaS</a></li>
+<li><a href="shopee-market-intelligence-hedge-funds.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Alternative Data for Hedge Funds</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4 style="color: var(--text-primary); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem;">Regional Shopee APIs</h4>
+<ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8; display: grid; grid-template-columns: 1fr 1fr; gap: 0.3rem 1rem;">
+<li><a href="shopee-brazil-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Shopee Brazil</a></li>
+<li><a href="shopee-mexico-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Shopee Mexico</a></li>
+<li><a href="shopee-argentina-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Shopee Argentina</a></li>
+<li><a href="shopee-singapore-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Shopee Singapore</a></li>
+<li><a href="shopee-malaysia-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Shopee Malaysia</a></li>
+<li><a href="shopee-thailand-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Shopee Thailand</a></li>
+<li><a href="shopee-philippines-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Shopee Philippines</a></li>
+<li><a href="shopee-vietnam-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Shopee Vietnam</a></li>
+<li><a href="shopee-indonesia-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Shopee Indonesia</a></li>
+<li><a href="shopee-cambodia-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Shopee Cambodia</a></li>
+<li><a href="shopee-laos-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Shopee Laos</a></li>
+<li><a href="shopee-taiwan-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Shopee Taiwan</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4 style="color: var(--text-primary); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem;">Multi-Marketplace APIs</h4>
+<ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
+<li><a href="amazon-scraper-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Amazon Scraper API</a></li>
+<li><a href="walmart-scraper-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Walmart Scraper API</a></li>
+<li><a href="ebay-scraper-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">eBay Scraper API</a></li>
+<li><a href="tiktok-shop-api.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">TikTok Shop API</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4 style="color: var(--text-primary); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem;">Company &amp; Legal</h4>
+<ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
+<li><a href="index.html" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Home / Data Platform</a></li>
+<li><a href="index.html#contact" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Contact Enterprise Sales</a></li>
+<li><a class="modal-trigger" data-modal="privacy" href="#privacy-modal" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Privacy Policy</a></li>
+<li><a class="modal-trigger" data-modal="terms" href="#terms-modal" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Terms of Service &amp; SLA</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer-bottom" style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.08); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+<p class="copyright" style="color: var(--text-muted); font-size: 0.85rem; margin: 0;">© 2026 NodusData Enterprise. All rights reserved.</p>
+</div>
+<div class="footer-disclaimer text-center" style="margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid rgba(255,255,255,0.06); font-size: 0.8rem; color: var(--text-muted);">
+<p><i class="fa-solid fa-shield-halved text-accent"></i> <strong>Independent Data Provider Disclaimer:</strong> NodusData is an independent third-party market intelligence and web data extraction provider. All third-party platform names, trademarks, and logos belong to their respective owners and are referenced strictly for identification and formatting capabilities.</p>
+</div>
+</div>
+</footer>
+<div class="toast" id="toast">
+<i class="fa-solid fa-circle-check text-accent"></i>
+<span id="toast-message">Inquiry sent to contact@nodusdatahq.com!</span>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
